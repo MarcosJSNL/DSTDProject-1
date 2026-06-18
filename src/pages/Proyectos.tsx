@@ -16,7 +16,6 @@ import PageHero from '../components/PageHero'
 import ProjectCard from '../components/ProjectCard'
 import SEO from '../components/SEO'
 import { seoMeta } from '../data/seo'
-import { projects } from '../data/projects'
 import { useLanguage } from '../context/LanguageContext'
 import { getTranslation } from '../i18n/translations'
 
@@ -34,6 +33,8 @@ export default function Proyectos() {
   const t = getTranslation(language)
   const p = t.projectsPage
   const isEn = language === 'en'
+
+  const projectItems = t.projectsData.items
 
   const filters = [
     { key: 'all', label: p.filters.all },
@@ -53,8 +54,8 @@ export default function Proyectos() {
   ]
 
   const filtered = activeFilter === 'all'
-    ? projects
-    : projects.filter((p) => p.category === activeFilter)
+    ? projectItems
+    : projectItems.filter((proj) => proj.category === activeFilter)
 
   return (
     <div className="bg-[#F2EFE9]">

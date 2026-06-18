@@ -148,16 +148,16 @@ export default function Contacto() {
             <Reveal>
               <div className="inline-flex items-center gap-2 mb-5">
                 <span className="h-1.5 w-1.5 rounded-full bg-champagne" />
-                <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/70">Carreras</span>
+                <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/70">{t.careers.eyebrow}</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-normal text-white leading-[1.1]" style={{ letterSpacing: '-0.03em' }}>
-                Trabaja con nosotros.
+                {t.careers.title}
               </h2>
               <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed">
-                En DSTD Enterprises buscamos personas comprometidas, con visión de crecimiento y actitud de servicio. Si quieres formar parte de un grupo empresarial en expansión, envíanos tu información.
+                {t.careers.description}
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
-                {['Operaciones', 'Administración', 'Ventas', 'Construcción', 'Logística', 'Atención al cliente'].map((area) => (
+                {t.careers.areas.map((area) => (
                   <div key={area} className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/80 backdrop-blur-sm">
                     {area}
                   </div>
@@ -166,26 +166,18 @@ export default function Contacto() {
             </Reveal>
             <Reveal delay={150}>
               <div className="rounded-3xl glass-card p-8">
-                <h3 className="text-xl font-medium text-navy">Postulación</h3>
-                <p className="mt-2 text-sm text-graphite/60">Completa el formulario y nos pondremos en contacto contigo.</p>
+                <h3 className="text-xl font-medium text-navy">{t.careers.applicationTitle}</h3>
+                <p className="mt-2 text-sm text-graphite/60">{t.careers.applicationDesc}</p>
                 <div className="mt-6">
                   <ContactForm
                     fields={[
-                      { name: 'name', label: 'Nombre completo', required: true, placeholder: 'Tu nombre' },
-                      { name: 'phone', label: 'Teléfono', required: true, placeholder: '829-367-2491' },
-                      { name: 'email', label: 'Correo electrónico', type: 'email', required: true, placeholder: 'tu@email.com' },
-                      { name: 'area', label: 'Área de interés', type: 'select', options: [
-                        { value: '', label: 'Selecciona un área' },
-                        { value: 'operaciones', label: 'Operaciones' },
-                        { value: 'administracion', label: 'Administración' },
-                        { value: 'ventas', label: 'Ventas' },
-                        { value: 'construccion', label: 'Construcción' },
-                        { value: 'logistica', label: 'Logística' },
-                        { value: 'atencion', label: 'Atención al cliente' },
-                      ]},
-                      { name: 'message', label: 'Mensaje / Notas', type: 'textarea', placeholder: 'Cuéntanos sobre ti. Adjuntarás tu CV más adelante.' },
+                      { name: 'name', label: t.careers.form.fullName, required: true, placeholder: t.careers.form.fullNamePlaceholder },
+                      { name: 'phone', label: t.careers.form.phone, required: true, placeholder: '829-367-2491' },
+                      { name: 'email', label: t.careers.form.email, type: 'email', required: true, placeholder: t.careers.form.emailPlaceholder },
+                      { name: 'area', label: t.careers.form.area, type: 'select', options: [...t.careers.selectOptions] },
+                      { name: 'message', label: t.careers.form.message, type: 'textarea', placeholder: t.careers.form.messagePlaceholder },
                     ]}
-                    submitLabel="Enviar postulación"
+                    submitLabel={t.careers.form.submit}
                   />
                 </div>
               </div>
