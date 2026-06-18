@@ -111,10 +111,10 @@ export default function Footer() {
           <p className="text-xs text-white/50">
             © {year} DSTD Enterprises. {t.footer.rights}
           </p>
-          <div className="flex items-center gap-4 text-xs text-white/40">
-            <Link to="/privacidad" className="transition-colors hover:text-champagne">{t.footer.privacy}</Link>
+          <div className="flex items-center gap-4 text-xs text-white/40 relative z-20 pointer-events-auto">
+            <Link to="/privacidad" className="cursor-pointer transition-colors hover:text-champagne py-1">{t.footer.privacy}</Link>
             <span>·</span>
-            <Link to="/terminos" className="transition-colors hover:text-champagne">{t.footer.terms}</Link>
+            <Link to="/terminos" className="cursor-pointer transition-colors hover:text-champagne py-1">{t.footer.terms}</Link>
           </div>
         </div>
       </div>

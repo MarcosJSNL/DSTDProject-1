@@ -22,7 +22,7 @@ export default function BackgroundDecor({
       {/* Dotted grid */}
       {dots && (
         <div
-          className={`absolute inset-0 ${
+          className={`pointer-events-none absolute inset-0 ${
             isDark ? 'bg-dots-light' : 'bg-dots'
           }`}
           style={{
@@ -36,21 +36,21 @@ export default function BackgroundDecor({
 
       {/* Floating gradient orbs — ultra subtle in light, visible in dark */}
       <div
-        className="decor-anim absolute -left-20 top-0 h-[26rem] w-[26rem] rounded-full blur-3xl"
+        className="decor-anim pointer-events-none absolute -left-20 top-0 h-[26rem] w-[26rem] rounded-full blur-3xl"
         style={{
           background: `radial-gradient(circle, ${champagne}${isDark ? '99' : '08'}, transparent 68%)`,
           animation: 'floatA 16s ease-in-out infinite',
         }}
       />
       <div
-        className="decor-anim absolute right-[-8rem] top-1/4 h-[30rem] w-[30rem] rounded-full blur-3xl"
+        className="decor-anim pointer-events-none absolute right-[-8rem] top-1/4 h-[30rem] w-[30rem] rounded-full blur-3xl"
         style={{
           background: `radial-gradient(circle, ${orb2}${isDark ? '80' : '06'}, transparent 68%)`,
           animation: 'floatB 20s ease-in-out infinite',
         }}
       />
       <div
-        className="decor-anim absolute bottom-[-6rem] left-1/3 h-[24rem] w-[24rem] rounded-full blur-3xl"
+        className="decor-anim pointer-events-none absolute bottom-[-6rem] left-1/3 h-[24rem] w-[24rem] rounded-full blur-3xl"
         style={{
           background: `radial-gradient(circle, ${champagne}${isDark ? '88' : '08'}, transparent 68%)`,
           animation: 'floatC 18s ease-in-out infinite',
@@ -59,7 +59,7 @@ export default function BackgroundDecor({
 
       {/* Slow rotating outline ring */}
       <div
-        className="decor-anim absolute -right-32 -top-32 h-96 w-96 rounded-full border-2"
+        className="decor-anim pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full border-2"
         style={{
           borderColor:
             isDark ? 'rgba(255,255,255,0.10)' : 'rgba(11,31,58,0.12)',
@@ -69,7 +69,7 @@ export default function BackgroundDecor({
 
       {/* Geometric shapes */}
       <svg
-        className={`decor-anim absolute left-[8%] top-[15%] h-8 w-8 ${isDark ? 'opacity-25' : 'opacity-45'}`}
+        className={`decor-anim pointer-events-none absolute left-[8%] top-[15%] h-8 w-8 ${isDark ? 'opacity-25' : 'opacity-45'}`}
         style={{ animation: 'floatA 14s ease-in-out infinite' }}
         viewBox="0 0 40 40"
         fill="none"
@@ -83,7 +83,7 @@ export default function BackgroundDecor({
       </svg>
 
       <svg
-        className={`decor-anim absolute right-[12%] top-[8%] h-6 w-6 ${isDark ? 'opacity-20' : 'opacity-40'}`}
+        className={`decor-anim pointer-events-none absolute right-[12%] top-[8%] h-6 w-6 ${isDark ? 'opacity-20' : 'opacity-40'}`}
         style={{ animation: 'floatB 18s ease-in-out infinite' }}
         viewBox="0 0 32 32"
         fill="none"
@@ -98,7 +98,7 @@ export default function BackgroundDecor({
       </svg>
 
       <svg
-        className={`decor-anim absolute left-[5%] bottom-[20%] h-10 w-10 ${isDark ? 'opacity-20' : 'opacity-35'}`}
+        className={`decor-anim pointer-events-none absolute left-[5%] bottom-[20%] h-10 w-10 ${isDark ? 'opacity-20' : 'opacity-35'}`}
         style={{ animation: 'floatC 22s ease-in-out infinite' }}
         viewBox="0 0 48 48"
         fill="none"
@@ -112,7 +112,7 @@ export default function BackgroundDecor({
       </svg>
 
       <svg
-        className={`decor-anim absolute right-[6%] bottom-[12%] h-7 w-7 ${isDark ? 'opacity-20' : 'opacity-35'}`}
+        className={`decor-anim pointer-events-none absolute right-[6%] bottom-[12%] h-7 w-7 ${isDark ? 'opacity-20' : 'opacity-35'}`}
         style={{ animation: 'floatA 20s ease-in-out infinite reverse' }}
         viewBox="0 0 36 36"
         fill="none"
@@ -127,7 +127,7 @@ export default function BackgroundDecor({
       </svg>
 
       <svg
-        className={`decor-anim absolute right-[25%] top-[45%] h-5 w-5 ${isDark ? 'opacity-20' : 'opacity-40'}`}
+        className={`decor-anim pointer-events-none absolute right-[25%] top-[45%] h-5 w-5 ${isDark ? 'opacity-20' : 'opacity-40'}`}
         style={{ animation: 'floatB 16s ease-in-out infinite' }}
         viewBox="0 0 28 28"
         fill="none"
@@ -141,7 +141,7 @@ export default function BackgroundDecor({
       </svg>
 
       <svg
-        className={`decor-anim absolute left-[18%] top-[55%] h-4 w-4 ${isDark ? 'opacity-15' : 'opacity-30'}`}
+        className={`decor-anim pointer-events-none absolute left-[18%] top-[55%] h-4 w-4 ${isDark ? 'opacity-15' : 'opacity-30'}`}
         style={{ animation: 'floatC 24s ease-in-out infinite' }}
         viewBox="0 0 24 24"
         fill="none"
@@ -157,7 +157,7 @@ export default function BackgroundDecor({
 
       {/* Decorative line */}
       <div
-        className={`decor-anim absolute left-0 top-1/3 h-[1px] w-[30%] ${isDark ? 'opacity-15' : 'opacity-25'}`}
+        className={`decor-anim pointer-events-none absolute left-0 top-1/3 h-[1px] w-[30%] ${isDark ? 'opacity-15' : 'opacity-25'}`}
         style={{
           background: isDark
             ? 'linear-gradient(to right, rgba(255,255,255,0.30), transparent)'
@@ -165,7 +165,7 @@ export default function BackgroundDecor({
         }}
       />
       <div
-        className={`decor-anim absolute right-0 top-2/3 h-[1px] w-[25%] ${isDark ? 'opacity-15' : 'opacity-25'}`}
+        className={`decor-anim pointer-events-none absolute right-0 top-2/3 h-[1px] w-[25%] ${isDark ? 'opacity-15' : 'opacity-25'}`}
         style={{
           background: isDark
             ? 'linear-gradient(to left, rgba(255,255,255,0.30), transparent)'
