@@ -16,9 +16,23 @@ export default function BackToTop() {
   }, [])
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0)
+    try {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    } catch {
+      window.scrollTo(0, 0)
+    }
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
+
+    const root = document.getElementById('root')
+    if (root) {
+      root.scrollTop = 0
+    }
+
+    const main = document.querySelector('main')
+    if (main) {
+      main.scrollTop = 0
+    }
   }
 
   return (
