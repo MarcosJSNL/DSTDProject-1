@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/sections/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
 import BackToTop from '../components/BackToTop'
+import VirtualAssistant from '../components/assistant/VirtualAssistant'
 import { whatsappMessages } from '../utils/whatsapp'
 
 export default function MainLayout() {
@@ -28,7 +29,8 @@ export default function MainLayout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppButton variant="floating" message={message} />
+      <WhatsAppButton variant="floating" message={message} className="!bottom-6 !left-6" />
+      <VirtualAssistant />
       <BackToTop />
     </>
   )
