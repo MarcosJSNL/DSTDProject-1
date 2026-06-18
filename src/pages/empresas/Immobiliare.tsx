@@ -9,7 +9,7 @@ import { seoMeta } from '../../data/seo'
 import { whatsappMessages } from '../../utils/whatsapp'
 
 const accent = '#C7372F'
-const heroImg = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop'
+const heroImg = '/media/immobiliarehorizontal.jpeg'
 
 const services = [
   { num: '01', icon: Home, title: 'Venta de propiedades', text: 'Cartera de inmuebles seleccionados en ubicaciones estratégicas del país.' },
@@ -44,7 +44,7 @@ const featured = {
 const properties = [
   { name: 'Solar para inversión', type: 'Terreno', location: 'Punta Cana, RD', priceLabel: 'Consultar', img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop' },
   { name: 'Apartamento en desarrollo', type: 'Residencial', location: 'Santiago, RD', priceLabel: 'Desde $120,000', img: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop' },
-  { name: 'Propiedad comercial', type: 'Comercial', location: 'Santo Domingo, RD', priceLabel: 'Consultar', img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop' },
+  { name: 'Propiedad comercial', type: 'Comercial', location: 'Santo Domingo, RD', priceLabel: 'Consultar', img: '/media/immobiliarevertical.jpeg' },
 ]
 
 const testimonial = {
