@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/sections/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
+import BackToTop from '../components/BackToTop'
 import { whatsappMessages } from '../utils/whatsapp'
 
 export default function MainLayout() {
@@ -28,6 +29,7 @@ export default function MainLayout() {
       </main>
       <Footer />
       <WhatsAppButton variant="floating" message={message} />
+      <BackToTop />
     </>
   )
 }
