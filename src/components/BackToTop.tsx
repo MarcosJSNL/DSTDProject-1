@@ -6,14 +6,19 @@ export default function BackToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(window.scrollY > 400)
+      const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0
+      setVisible(scrollTop > 300)
     }
+
     window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }
 
   return (
