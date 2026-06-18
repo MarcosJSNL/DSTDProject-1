@@ -46,13 +46,13 @@ export default function Industrias() {
         <img src={heroImg} alt="DSTD Industrias" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/80 to-navy-deep/30" />
         <div className="absolute inset-0" style={{ background: `linear-gradient(115deg, ${accent}33, transparent 50%)` }} />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pt-28">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pt-20 sm:pt-28">
           <Reveal className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: accent }} />
               <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/80">División Industrias</span>
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.02]" style={{ letterSpacing: '-0.035em' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.05]" style={{ letterSpacing: '-0.02em' }}>
               El material que da <span style={{ color: accent }}>estructura</span> a tus ideas.
             </h1>
             <p className="mt-6 text-base md:text-lg text-white/80 leading-relaxed max-w-2xl">

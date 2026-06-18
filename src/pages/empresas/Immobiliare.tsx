@@ -63,15 +63,15 @@ export default function Immobiliare() {
         <img src={heroImg} alt="DSTD Immobiliare" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-navy-deep/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/60 via-transparent to-navy-deep/80" />
-        <div className="relative z-10 mx-auto max-w-4xl px-6 pt-24">
+        <div className="relative z-10 mx-auto max-w-4xl px-6 pt-16 sm:pt-24">
           <Reveal>
             <div className="inline-flex items-center gap-2 mb-6 justify-center">
               <span className="h-px w-8 bg-white/40" />
               <span className="text-xs md:text-sm uppercase tracking-[0.3em] text-white/80">División Immobiliare</span>
               <span className="h-px w-8 bg-white/40" />
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-[1.05]" style={{ letterSpacing: '-0.02em' }}>
-              Espacios que generan<br /><span className="italic" style={{ color: '#ec6b62' }}>valor</span> a largo plazo.
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white leading-[1.05]" style={{ letterSpacing: '-0.02em' }}>
+              Espacios que generan <span className="italic" style={{ color: '#ec6b62' }}>valor</span> a largo plazo.
             </h1>
             <p className="mt-7 mx-auto max-w-2xl text-base md:text-lg text-white/80 leading-relaxed">
               Conectamos personas con oportunidades inmobiliarias sólidas: propiedades, proyectos, inversión y financiamiento con visión de desarrollo.

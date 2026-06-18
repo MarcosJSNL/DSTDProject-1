@@ -36,10 +36,10 @@ export default function SectionHeading({
         </div>
       )}
       <h2
-        className={`text-3xl md:text-4xl lg:text-5xl font-normal leading-[1.1] ${
+        className={`text-[1.65rem] sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-[1.1] ${
           isDark ? 'text-white' : 'text-navy'
         }`}
-        style={{ letterSpacing: '-0.03em' }}
+        style={{ letterSpacing: '-0.02em' }}
       >
         {title}
       </h2>

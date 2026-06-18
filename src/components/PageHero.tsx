@@ -21,7 +21,7 @@ export default function PageHero({
   const isDark = tone === 'dark'
 
   return (
-    <section className={`relative overflow-hidden py-28 md:py-36 ${isDark ? 'bg-navy-deep' : 'bg-white'}`}>
+    <section className={`relative overflow-hidden py-20 md:py-36 ${isDark ? 'bg-navy-deep' : 'bg-white'}`}>
       {bgImage && (
         <>
           <img src={bgImage} alt="" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
@@ -39,8 +39,8 @@ export default function PageHero({
             </span>
           </div>
           <h1
-            className={`text-4xl md:text-5xl lg:text-6xl font-normal leading-[1.1] max-w-3xl ${isDark ? 'text-white' : 'text-navy'}`}
-            style={{ letterSpacing: '-0.03em' }}
+            className={`text-3xl md:text-5xl lg:text-6xl font-normal leading-[1.1] max-w-3xl ${isDark ? 'text-white' : 'text-navy'}`}
+            style={{ letterSpacing: '-0.02em' }}
           >
             {title}
           </h1>

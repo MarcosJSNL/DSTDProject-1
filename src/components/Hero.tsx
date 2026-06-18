@@ -38,8 +38,8 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col min-h-[100dvh]">
-        <div className="flex-1 flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-12 lg:pb-16">
-          <div className="lg:grid lg:grid-cols-12 lg:items-end gap-8 xl:gap-12">
+        <div className="flex-1 flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-8 sm:pb-12 lg:pb-16 pt-24 sm:pt-0">
+          <div className="lg:grid lg:grid-cols-12 lg:items-end gap-6 xl:gap-12">
             {/* Left Column — main content */}
             <div className="lg:col-span-7">
               <FadeIn delay={400} duration={900}>
@@ -53,11 +53,11 @@ export default function Hero() {
 
               <AnimatedHeading
                 text={'Construyendo el futuro\ncon visión empresarial.'}
-                className="text-readable text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-5 leading-[1.05]"
+                className="text-readable text-white text-[1.65rem] sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-5 leading-[1.1]"
                 charDelay={30}
                 initialDelay={200}
                 transitionDuration={500}
-                style={{ letterSpacing: '-0.04em' }}
+                style={{ letterSpacing: '-0.02em' }}
               />
 
               <FadeIn delay={800} duration={1000}>
@@ -106,9 +106,9 @@ export default function Hero() {
             </div>
 
             {/* Right Column — divisions card */}
-            <div className="lg:col-span-5 flex items-end justify-start lg:justify-end mt-10 lg:mt-0">
+            <div className="lg:col-span-5 flex items-end justify-start lg:justify-end mt-6 sm:mt-8 lg:mt-0">
               <FadeIn delay={1400} duration={1000} className="w-full lg:max-w-sm">
-                <div className="liquid-glass rounded-2xl p-6 w-full">
+                <div className="liquid-glass rounded-2xl p-4 sm:p-6 w-full">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs uppercase tracking-[0.2em] text-white/60">
                       Nuestras divisiones

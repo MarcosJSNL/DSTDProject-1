@@ -45,14 +45,14 @@ export default function Agregados() {
       <section className="relative overflow-hidden min-h-[85vh] flex items-end">
         <img src={heroImg} alt="DSTD Agregados" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(43,33,22,0.95), rgba(43,33,22,0.55) 45%, rgba(43,33,22,0.25))' }} />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pb-20 md:pb-24 pt-40">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pb-16 sm:pb-20 md:pb-24 pt-28 sm:pt-40">
           <Reveal>
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: '#d4b483' }} />
               <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/80">División Agregados</span>
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.02] max-w-4xl" style={{ letterSpacing: '-0.035em' }}>
-              La base sólida de<br />toda <span style={{ color: '#d4b483' }}>construcción</span>.
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.05] max-w-4xl" style={{ letterSpacing: '-0.02em' }}>
+              La base sólida de toda <span style={{ color: '#d4b483' }}>construcción</span>.
             </h1>
             <p className="mt-6 text-base md:text-lg text-white/80 leading-relaxed max-w-2xl">
               Arena, grava, piedra y materiales áridos seleccionados y procesados con control de calidad para obras de toda escala.

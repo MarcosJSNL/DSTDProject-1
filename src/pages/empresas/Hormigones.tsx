@@ -50,13 +50,13 @@ export default function Hormigones() {
         <img src={heroImg} alt="DSTD Hormigones" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/30" />
         <div className="absolute inset-0" style={{ background: `linear-gradient(120deg, ${accent}26, transparent 55%)` }} />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pb-20 md:pb-28 pt-40">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pb-16 sm:pb-20 md:pb-28 pt-28 sm:pt-40">
           <Reveal>
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: accent }} />
               <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/80">División Hormigones</span>
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.02] max-w-4xl" style={{ letterSpacing: '-0.035em' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.05] max-w-4xl" style={{ letterSpacing: '-0.02em' }}>
               Hormigón que sostiene <span style={{ color: accent }}>grandes proyectos</span>.
             </h1>
             <p className="mt-6 text-base md:text-lg text-white/80 leading-relaxed max-w-2xl">
