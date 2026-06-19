@@ -12,7 +12,7 @@ export const translations = {
     },
     hero: {
       tag: 'Grupo empresarial · Desarrollo · Inversión',
-      title: 'Construyendo el futuro\\ncon visión empresarial.',
+      title: 'Construyendo el futuro\ncon visión empresarial.',
       subtitle:
         'DSTD Enterprises integra construcción, hormigones, industria, immobiliare y agregados bajo una visión de desarrollo, confianza y crecimiento a largo plazo.',
       primaryButton: 'Conocer el grupo',
@@ -350,7 +350,7 @@ export const translations = {
     },
     hero: {
       tag: 'Business group · Development · Investment',
-      title: 'Building the future\\nwith business vision.',
+      title: 'Building the future\nwith business vision.',
       subtitle:
         'DSTD Enterprises integrates construction, concrete, industry, real estate and aggregates under a vision of development, trust and long-term growth.',
       primaryButton: 'Discover the group',
