@@ -132,6 +132,19 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-4 text-center">
+          <a
+            href="https://www.instagram.com/codify.webagency/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] text-white/30 hover:text-champagne transition-colors duration-300"
+          >
+            {language === 'es'
+              ? 'Sitio web creado por Codify Web Agency'
+              : 'Website created by Codify Web Agency'}
+          </a>
+        </div>
       </div>
     </footer>
   )
