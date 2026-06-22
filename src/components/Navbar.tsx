@@ -50,25 +50,32 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#C8A45D]" />
-            <span className={`font-gothic text-2xl leading-none translate-y-[2px] ${overlay ? 'text-white' : 'text-navy'}`}>
+            <span className={`font-gothic text-2xl leading-none ${overlay ? 'text-white' : 'text-navy'}`}>
               DSTD
             </span>
-            <span className={`text-sm font-medium uppercase tracking-widest leading-none ${overlay ? 'text-white/70' : 'text-navy/70'}`}>
+            <span className={`text-sm font-medium uppercase tracking-widest ${overlay ? 'text-white/70' : 'text-navy/70'}`}>
               Enterprises
             </span>
           </Link>
           {/* Curved divider */}
           <svg
-            width="18"
-            height="40"
-            viewBox="0 0 18 40"
+            width="14"
+            height="44"
+            viewBox="0 0 14 44"
             fill="none"
-            className={overlay ? 'text-white/30' : 'text-navy/25'}
+            className={overlay ? 'text-white/40' : 'text-navy/30'}
             aria-hidden="true"
           >
+            <defs>
+              <linearGradient id="navDivider" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="currentColor" stopOpacity="0" />
+                <stop offset="50%" stopColor="currentColor" stopOpacity="1" />
+                <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+              </linearGradient>
+            </defs>
             <path
-              d="M4 2 Q15 20 4 38"
-              stroke="currentColor"
+              d="M3 2 C11 14 11 30 3 42"
+              stroke="url(#navDivider)"
               strokeWidth="1.5"
               strokeLinecap="round"
             />
