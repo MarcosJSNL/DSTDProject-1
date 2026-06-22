@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import Reveal from '../Reveal'
 import SectionHeading from '../SectionHeading'
@@ -29,8 +30,9 @@ export default function CompaniesSection() {
         <div className="mt-14 grid sm:grid-cols-2 gap-6 lg:gap-8">
           {companies.map((c, i) => (
             <Reveal key={c.id} delay={i * 100}>
-              <article
-                className="group relative h-80 md:h-96 overflow-hidden rounded-3xl shadow-premium ring-1 ring-transparent transition-all duration-500 hover:-translate-y-1 group-hover:ring-[color:var(--accent)]"
+              <Link
+                to={`/empresas/${c.id}`}
+                className="group block relative h-80 md:h-96 overflow-hidden rounded-3xl shadow-premium ring-1 ring-transparent transition-all duration-500 hover:-translate-y-1 group-hover:ring-[color:var(--accent)]"
                 style={{ ['--accent' as string]: c.accent } as CSSProperties}
               >
                 {/* Image */}
@@ -69,18 +71,15 @@ export default function CompaniesSection() {
                   <p className="mt-3 max-w-md text-sm md:text-base text-white/80 leading-relaxed">
                     {((t.companies as unknown) as Record<string, { description: string }>)[c.id]?.description ?? c.description}
                   </p>
-                  <a
-                    href="#contacto"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors duration-300 group-hover:[color:var(--accent)]"
-                  >
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors duration-300 group-hover:[color:var(--accent)]">
                     {isEn ? 'Learn more' : 'Conocer más'}
                     <ArrowRight
                       size={16}
                       className="transition-transform duration-300 group-hover:translate-x-1"
                     />
-                  </a>
+                  </span>
                 </div>
-              </article>
+              </Link>
             </Reveal>
           ))}
         </div>

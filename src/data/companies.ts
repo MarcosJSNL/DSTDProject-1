@@ -16,7 +16,7 @@ export const companies: Company[] = [
     description:
       'Hormigón y concreto premezclado para obras que exigen resistencia, calidad y puntualidad.',
     accent: '#E8772E',
-    image: '/img/hormigones.jpg',
+    image: '/media/card .jpeg',
   },
   {
     id: 'industrias',

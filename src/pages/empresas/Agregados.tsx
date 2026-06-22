@@ -22,9 +22,9 @@ export default function Agregados() {
   const catalog = [
     { name: isEn ? 'Sand' : 'Arena', description: isEn ? 'Fine and coarse sand for construction, finishes and all types of civil works.' : 'Arena fina y gruesa para construcción, acabados y obras civiles de todo tipo.', img: '/img/productos/arena.jpg', tall: true },
     { name: isEn ? 'Gravel' : 'Grava', description: isEn ? 'Gravel of different sizes for bases, asphalt, concrete and filters.' : 'Grava de distintos tamaños para bases, asfaltos, concretos y filtros.', img: '/img/productos/grava.webp', tall: false },
-    { name: isEn ? 'Stone' : 'Piedra', description: isEn ? 'Crushed stone, river stone and material for masonry and gabions.' : 'Piedra picada, canto rodado y material para mampostería y gaviones.', img: '/img/productos/piedra.webp', tall: false },
+    { name: isEn ? 'Gravel' : 'Gravilla', description: isEn ? 'Gravel of different sizes for bases, asphalt, concrete and filters.' : 'Grava de distintos tamaños para bases, asfaltos, concretos y filtros.', img: '/img/productos/piedra.webp', tall: false },
     { name: isEn ? 'Mixed aggregates' : 'Agregados mixtos', description: isEn ? 'Specific blends according to your project technical specifications.' : 'Mezclas específicas según las especificaciones técnicas de tu proyecto.', img: '/img/productos/agregados-mixtos.jpg', tall: false },
-    { name: isEn ? 'Selected material' : 'Material selecto', description: isEn ? 'Processed and classified material for special uses and finishes.' : 'Material procesado y clasificado para usos especiales y acabados.', img: '/img/productos/material-selecto.jpg', tall: true },
+    { name: isEn ? 'Fill material' : 'Material para relleno', description: isEn ? 'Processed and classified material for fills, bases and backfill.' : 'Material procesado y clasificado para rellenos, bases y explanaciones.', img: '/img/productos/material-selecto.jpg', tall: true },
     { name: isEn ? 'Work supply' : 'Suministro para obras', description: isEn ? 'Continuous supply for projects of any scale.' : 'Abastecimiento continuo para proyectos de cualquier escala.', img: '/img/productos/suministro-para-obras.jpg', tall: false },
   ]
 
@@ -72,7 +72,7 @@ export default function Agregados() {
       <section className="relative z-20" style={{ backgroundColor: accent }}>
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 py-6 text-white/90">
-            {[isEn ? 'Sand' : 'Arena', isEn ? 'Gravel' : 'Grava', isEn ? 'Stone' : 'Piedra', isEn ? 'Selected material' : 'Material selecto', isEn ? 'Mixed aggregates' : 'Agregados mixtos'].map((m) => (
+            {[isEn ? 'Sand' : 'Arena', isEn ? 'Gravel' : 'Gravilla', isEn ? 'Fill material' : 'Material para relleno', isEn ? 'Mixed aggregates' : 'Agregados mixtos', isEn ? 'Work supply' : 'Suministro para obras'].map((m) => (
               <span key={m} className="text-sm md:text-base font-medium uppercase tracking-wider">{m}</span>
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function Agregados() {
               <h2 className="text-3xl md:text-4xl font-normal text-navy leading-[1.1]" style={{ letterSpacing: '-0.03em' }}>{isEn ? 'Our materials.' : 'Nuestros materiales.'}</h2>
             </div>
           </Reveal>
-          <div className="mt-14 columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+          <div className="mt-14 columns-1 sm:columns-2 xl:columns-3 gap-6 [column-fill:_balance]">
             {catalog.map((p, i) => (
               <Reveal key={p.name} delay={(i % 3) * 90}>
                 <div className="group relative mb-6 break-inside-avoid overflow-hidden rounded-3xl shadow-premium">
