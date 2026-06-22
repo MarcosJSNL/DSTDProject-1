@@ -47,17 +47,20 @@ export default function Navbar() {
     <nav className={`px-6 md:px-12 lg:px-16 py-4 relative z-50 ${overlay ? '' : 'bg-navy-deep'}`}>
       <div className={`max-w-7xl mx-auto rounded-xl px-4 py-2 flex items-center justify-between ${overlay ? 'liquid-glass' : 'bg-ivory border border-navy/10'}`}>
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5">
-          <span className="h-2 w-2 rounded-full bg-[#C8A45D]" />
-          <div className="flex flex-col leading-none">
-            <span className={`text-2xl font-semibold tracking-tight ${overlay ? 'text-white' : 'text-navy'}`}>
+        <div className="flex items-center">
+          <Link to="/" className="flex items-baseline gap-2">
+            <span className="h-2 w-2 self-center rounded-full bg-[#C8A45D]" />
+            <span className={`font-gothic text-2xl leading-none ${overlay ? 'text-white' : 'text-navy'}`}>
               DSTD
             </span>
-            <span className={`text-[10px] uppercase tracking-widest -mt-0.5 ${overlay ? 'text-white/70' : 'text-navy/70'}`}>
+            <span className={`text-sm font-medium uppercase tracking-widest ${overlay ? 'text-white/70' : 'text-navy/70'}`}>
               Enterprises
             </span>
-          </div>
-        </Link>
+          </Link>
+          <span className={`ml-3 text-3xl font-light leading-none ${overlay ? 'text-white/30' : 'text-navy/25'}`}>
+            )
+          </span>
+        </div>
 
         {/* Center Links - Desktop */}
         <div className="hidden md:flex items-center gap-8">

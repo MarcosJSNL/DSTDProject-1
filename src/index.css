@@ -17,6 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.font-gothic {
+  font-family: 'UnifrakturCook', 'Inter', sans-serif;
+}
+
 /* Safe area bottom padding for fixed elements on mobile */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .pb-safe {
