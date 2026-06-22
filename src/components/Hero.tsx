@@ -12,10 +12,10 @@ export default function Hero() {
   const isEn = language === 'en'
 
   const divisions = [
-    { name: t.companies.hormigones.name, slug: 'hormigones', desc: t.companies.hormigones.description },
     { name: t.companies.industrias.name, slug: 'industrias', desc: t.companies.industrias.description },
-    { name: t.companies.immobiliare.name, slug: 'immobiliare', desc: t.companies.immobiliare.description },
     { name: t.companies.agregados.name, slug: 'agregados', desc: t.companies.agregados.description },
+    { name: t.companies.hormigones.name, slug: 'hormigones', desc: t.companies.hormigones.description },
+    { name: t.companies.immobiliare.name, slug: 'immobiliare', desc: t.companies.immobiliare.description },
   ]
 
   const stats = [
