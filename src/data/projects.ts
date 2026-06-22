@@ -38,7 +38,7 @@ export const projects: Project[] = [
     category: 'agregados',
     description: 'Suministro de arena, grava y piedra para proyecto de infraestructura vial.',
     location: 'La Romana, RD',
-    image: '/img/agregados.jpg',
+    image: '/media/calle .jpeg',
   },
   {
     id: '5',

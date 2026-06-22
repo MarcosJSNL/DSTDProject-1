@@ -11,7 +11,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
 const accent = '#7FC241'
-const heroImg = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076&auto=format&fit=crop'
+const heroImg = '/media/industrias hero .jpeg'
 
 export default function Industrias() {
   const { language } = useLanguage()

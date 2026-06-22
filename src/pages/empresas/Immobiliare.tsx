@@ -12,7 +12,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
 const accent = '#C7372F'
-const heroImg = '/media/immobiliarehorizontal.jpeg'
+const heroImg = '/media/immobiliare hero.jpeg'
 const ctaImg = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop'
 
 export default function Immobiliare() {
@@ -46,7 +46,7 @@ export default function Immobiliare() {
       { icon: Bath, label: isEn ? '2 bathrooms' : '2 baños' },
       { icon: Maximize, label: '120 m²' },
     ],
-    img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1974&auto=format&fit=crop',
+    img: '/media/imagen principal immobiliare.jpeg',
   }
 
   const properties = [

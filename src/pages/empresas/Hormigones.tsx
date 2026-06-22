@@ -98,7 +98,7 @@ export default function Hormigones() {
               <div className="relative">
                 <div className="absolute -left-4 -top-4 h-24 w-24 rounded-tl-3xl border-l-4 border-t-4" style={{ borderColor: accent }} />
                 <div className="rounded-3xl overflow-hidden h-[26rem] shadow-premium-lg">
-                  <img src="/img/hormigones.jpg" alt="Planta de hormigón DSTD" className="h-full w-full object-cover" loading="lazy" />
+                  <img src="/media/hormigones card 2 .jpeg" alt="Planta de hormigón DSTD" className="h-full w-full object-cover" loading="lazy" />
                 </div>
                 <div className="absolute -right-4 -bottom-4 h-24 w-24 rounded-br-3xl border-r-4 border-b-4" style={{ borderColor: accent }} />
               </div>

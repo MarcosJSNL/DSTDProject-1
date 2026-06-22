@@ -25,7 +25,7 @@ export const companies: Company[] = [
     description:
       'Materiales industriales, blocks, varillas, cemento, vigas H y soluciones para proyectos de construcción.',
     accent: '#7FC241',
-    image: '/img/industrias.jpg',
+    image: '/media/industrias hero .jpeg',
   },
   {
     id: 'immobiliare',
@@ -34,7 +34,7 @@ export const companies: Company[] = [
     description:
       'Propiedades, proyectos, inversiones y préstamos inmobiliarios con visión de desarrollo.',
     accent: '#C7372F',
-    image: '/img/immobiliare.jpg',
+    image: '/media/imagen principal immobiliare.jpeg',
   },
   {
     id: 'agregados',
@@ -43,6 +43,6 @@ export const companies: Company[] = [
     description:
       'Arena, grava, piedra y agregados para obras, proyectos y suministro de materiales.',
     accent: '#8B6B43',
-    image: '/img/agregados.jpg',
+    image: '/media/agregados card .jpeg',
   },
 ]
