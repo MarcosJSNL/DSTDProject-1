@@ -11,7 +11,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
 const accent = '#E8772E'
-const heroImg = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop'
+const heroImg = '/media/hormigones hero .jpeg'
 
 export default function Hormigones() {
   const { language } = useLanguage()
@@ -44,7 +44,7 @@ export default function Hormigones() {
 
   const projectTypes = [
     { name: isEn ? 'Residential buildings' : 'Edificios residenciales', img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1974&auto=format&fit=crop' },
-    { name: isEn ? 'Road infrastructure' : 'Infraestructura vial', img: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2025&auto=format&fit=crop' },
+    { name: isEn ? 'Road infrastructure' : 'Infraestructura vial', img: '/media/calle .jpeg' },
     { name: isEn ? 'Industrial works' : 'Obras industriales', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=2070&auto=format&fit=crop' },
   ]
 
