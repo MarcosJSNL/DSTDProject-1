@@ -2,6 +2,7 @@ import { ArrowRight, MapPin, TrendingUp, KeyRound, Banknote, Building, Home, Bed
 import { Link } from 'react-router-dom'
 import Reveal from '../../components/Reveal'
 import BackgroundDecor from '../../components/BackgroundDecor'
+import BrandText from '../../components/BrandText'
 import ContactForm from '../../components/ContactForm'
 import WhatsAppButton from '../../components/WhatsAppButton'
 import SEO from '../../components/SEO'
@@ -150,7 +151,7 @@ export default function Immobiliare() {
                   <MapPin size={16} style={{ color: accent }} />
                   {featured.location}
                 </div>
-                <h3 className="mt-3 text-3xl md:text-4xl font-light text-navy leading-tight" style={{ letterSpacing: '-0.02em' }}>{featured.name}</h3>
+                <h3 className="mt-3 text-3xl md:text-4xl font-light text-navy leading-tight" style={{ letterSpacing: '-0.02em' }}><BrandText>{featured.name}</BrandText></h3>
                 <p className="mt-4 text-base text-graphite/65 leading-relaxed">{featured.description}</p>
                 <div className="mt-7 grid grid-cols-3 gap-3">
                   {featured.specs.map((sp) => (

@@ -1,5 +1,6 @@
 import { MapPin, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import BrandText from './BrandText'
 
 interface ProjectCardProps {
   title: string
@@ -36,7 +37,7 @@ export default function ProjectCard({
         </span>
       </div>
       <div className="p-7">
-        <h3 className="text-lg font-medium text-navy">{title}</h3>
+        <h3 className="text-lg font-medium text-navy"><BrandText>{title}</BrandText></h3>
         <div className="mt-2 flex items-center gap-1.5 text-sm text-graphite/60">
           <MapPin size={14} strokeWidth={1.5} />
           {location}

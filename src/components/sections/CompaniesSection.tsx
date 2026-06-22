@@ -4,6 +4,7 @@ import Reveal from '../Reveal'
 import SectionHeading from '../SectionHeading'
 import { companies } from '../../data/companies'
 import BackgroundDecor from '../BackgroundDecor'
+import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
@@ -63,7 +64,7 @@ export default function CompaniesSection() {
                     {c.short}
                   </span>
                   <h3 className="mt-2 text-2xl md:text-3xl font-medium text-white">
-                    {((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}
+                    <BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</BrandText>
                   </h3>
                   <p className="mt-3 max-w-md text-sm md:text-base text-white/80 leading-relaxed">
                     {((t.companies as unknown) as Record<string, { description: string }>)[c.id]?.description ?? c.description}

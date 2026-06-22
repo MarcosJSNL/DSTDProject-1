@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import AssistantMessage from './AssistantMessage'
 import QuickQuestions from './QuickQuestions'
+import BrandText from '../BrandText'
 import type { ChatMessage } from '../../data/assistantKnowledge'
 import type { Language } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
@@ -38,7 +39,7 @@ export default function AssistantWindow({ messages, onQuickQuestion, language }:
             <span className="text-sm text-champagne font-semibold">D</span>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-white leading-none">{a.title}</h3>
+            <h3 className="text-sm font-semibold text-white leading-none"><BrandText>{a.title}</BrandText></h3>
             <p className="mt-0.5 text-[11px] text-white/60">{a.subtitle}</p>
           </div>
         </div>

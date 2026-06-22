@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import BackgroundDecor from '../components/BackgroundDecor'
+import BrandText from '../components/BrandText'
 import PageHero from '../components/PageHero'
 import ContactForm from '../components/ContactForm'
 import WhatsAppButton from '../components/WhatsAppButton'
@@ -124,7 +125,7 @@ export default function Contacto() {
                   <div className="text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: c.accent }}>
                     {c.short}
                   </div>
-                  <h3 className="mt-2 text-xl font-medium text-navy">{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</h3>
+                  <h3 className="mt-2 text-xl font-medium text-navy"><BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</BrandText></h3>
                   <p className="mt-2 text-sm text-graphite/65 leading-relaxed">{((t.companies as unknown) as Record<string, { description: string }>)[c.id]?.description ?? c.description}</p>
                   <Link
                     to={`/empresas/${c.id}`}

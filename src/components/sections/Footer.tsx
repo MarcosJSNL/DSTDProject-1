@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Mail, Phone } from 'lucide-react'
 import BackgroundDecor from '../BackgroundDecor'
+import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
@@ -34,8 +35,8 @@ export default function Footer() {
             <div className="flex items-center gap-2.5">
               <span className="h-2 w-2 rounded-full bg-champagne" />
               <div className="flex flex-col leading-none">
-                <span className="text-2xl font-semibold tracking-tight">DSTD</span>
-                <span className="text-[10px] uppercase tracking-widest text-white/60 -mt-0.5">
+                <span className="font-gothic text-2xl tracking-tight">DSTD</span>
+                <span className="text-[10px] uppercase tracking-widest text-white/60 mt-1">
                   Enterprises
                 </span>
               </div>
@@ -78,7 +79,7 @@ export default function Footer() {
                     to={c.to}
                     className="text-sm text-white/75 transition-colors duration-300 hover:text-champagne"
                   >
-                    {((t.companies as unknown) as Record<string, { name: string }>)[c.key]?.name ?? c.key}
+                    <BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.key]?.name ?? c.key}</BrandText>
                   </Link>
                 </li>
               ))}

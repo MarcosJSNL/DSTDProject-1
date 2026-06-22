@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import AnimatedHeading from './AnimatedHeading'
+import BrandText from './BrandText'
 import FadeIn from './FadeIn'
 import { useLanguage } from '../context/LanguageContext'
 import { getTranslation } from '../i18n/translations'
@@ -131,7 +132,7 @@ export default function Hero() {
                           className="flex-1"
                         >
                           <div className="text-base md:text-lg font-medium text-white">
-                            {d.name}
+                            <BrandText>{d.name}</BrandText>
                           </div>
                           <div className="text-xs text-white/60">{d.desc}</div>
                         </Link>

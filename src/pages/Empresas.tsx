@@ -4,6 +4,7 @@ import { companies } from '../data/companies'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import BackgroundDecor from '../components/BackgroundDecor'
+import BrandText from '../components/BrandText'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import { seoMeta } from '../data/seo'
@@ -68,7 +69,7 @@ export default function Empresas() {
                       {c.short}
                     </span>
                     <h3 className="mt-2 text-2xl md:text-3xl font-medium text-white">
-                      {((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}
+                      <BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</BrandText>
                     </h3>
                     <p className="mt-3 max-w-md text-sm md:text-base text-white/80 leading-relaxed">
                       {((t.companies as unknown) as Record<string, { description: string }>)[c.id]?.description ?? c.description}
