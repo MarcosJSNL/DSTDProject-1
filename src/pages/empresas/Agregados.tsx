@@ -127,11 +127,11 @@ export default function Agregados() {
               <h2 className="text-3xl md:text-4xl font-normal text-navy leading-[1.1]" style={{ letterSpacing: '-0.03em' }}>{isEn ? 'Our materials.' : 'Nuestros materiales.'}</h2>
             </div>
           </Reveal>
-          <div className="mt-14 columns-1 sm:columns-2 xl:columns-3 gap-6 [column-fill:_balance]">
+          <div className="mt-14 flex flex-wrap gap-6">
             {catalog.map((p, i) => (
-              <Reveal key={p.name} delay={(i % 3) * 90}>
-                <div className="group relative mb-6 break-inside-avoid overflow-hidden rounded-3xl shadow-premium">
-                  <img src={p.img} alt={p.name} loading="lazy" className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${p.tall ? 'h-96' : 'h-64'}`} />
+              <Reveal key={p.name} delay={i * 80} className="w-full sm:w-[calc(50%-12px)] xl:w-[calc(33.333%-16px)]">
+                <div className={`group relative overflow-hidden rounded-3xl shadow-premium ${p.tall ? 'h-96' : 'h-64'}`}>
+                  <img src={p.img} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2b2116]/90 via-[#2b2116]/20 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <h3 className="text-xl font-medium text-white">{p.name}</h3>
