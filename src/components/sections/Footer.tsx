@@ -98,9 +98,25 @@ export default function Footer() {
                 <Mail size={16} className="text-champagne" strokeWidth={1.5} />
                 dstdenterprises@gmail.com
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="text-champagne" strokeWidth={1.5} />
-                829-367-2491
+              <li className="flex items-start gap-3">
+                <Phone size={16} className="text-champagne mt-0.5 shrink-0" strokeWidth={1.5} />
+                <div className="space-y-3">
+                  <div>
+                    <div className="text-white/90">{language === 'es' ? 'Internacionales (WhatsApp only)' : 'International (WhatsApp only)'}</div>
+                    <div className="mt-0.5 space-y-0.5 text-white/60">
+                      <div>+1 786 933 0018</div>
+                      <div>+1 786 933 0017</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-white/90">{language === 'es' ? 'Nacionales para ventas (WhatsApp only)' : 'National sales (WhatsApp only)'}</div>
+                    <div className="mt-0.5 space-y-0.5 text-white/60">
+                      <div>+1 829 367 2491</div>
+                      <div>+1 809 666 6616</div>
+                      <div>+1 849 257 0251</div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

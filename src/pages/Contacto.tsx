@@ -95,9 +95,22 @@ export default function Contacto() {
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-champagne/10">
                       <Phone size={20} className="text-champagne" strokeWidth={1.5} />
                     </div>
-                    <div>
-                      <div className="font-medium text-navy">{c.whatsapp}</div>
-                      <div className="text-sm text-graphite/60">829-367-2491</div>
+                    <div className="space-y-4">
+                      <div>
+                        <div className="font-medium text-navy">{isEn ? 'International (WhatsApp only)' : 'Internacionales (WhatsApp only)'}</div>
+                        <div className="mt-1 space-y-0.5 text-sm text-graphite/60">
+                          <div>+1 786 933 0018</div>
+                          <div>+1 786 933 0017</div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-medium text-navy">{isEn ? 'National sales (WhatsApp only)' : 'Nacionales para ventas (WhatsApp only)'}</div>
+                        <div className="mt-1 space-y-0.5 text-sm text-graphite/60">
+                          <div>+1 829 367 2491</div>
+                          <div>+1 809 666 6616</div>
+                          <div>+1 849 257 0251</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
