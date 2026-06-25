@@ -54,6 +54,6 @@ export const projects: Project[] = [
     category: 'general',
     description: 'Construcción de oficinas corporativas con materiales del grupo.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1920&auto=format&fit=crop',
   },
 ]
