@@ -1,5 +1,4 @@
 import { MapPin, ArrowRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
 import BrandText from './BrandText'
 
 interface ProjectCardProps {
@@ -9,6 +8,7 @@ interface ProjectCardProps {
   location: string
   image: string
   accentColor?: string
+  onClick?: () => void
 }
 
 export default function ProjectCard({
@@ -18,6 +18,7 @@ export default function ProjectCard({
   location,
   image,
   accentColor = '#C8A45D',
+  onClick,
 }: ProjectCardProps) {
   return (
     <div className="group relative overflow-hidden rounded-3xl glass-card shadow-premium transition-all duration-500 hover:-translate-y-1">
@@ -43,13 +44,13 @@ export default function ProjectCard({
           {location}
         </div>
         <p className="mt-3 text-sm text-graphite/65 leading-relaxed line-clamp-3">{description}</p>
-        <Link
-          to="/contacto"
+        <button
+          onClick={onClick}
           className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-navy transition-colors duration-300 hover:text-champagne"
         >
           Ver proyecto
           <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-        </Link>
+        </button>
       </div>
     </div>
   )

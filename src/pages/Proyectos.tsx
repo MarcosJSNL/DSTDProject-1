@@ -14,6 +14,7 @@ import SectionHeading from '../components/SectionHeading'
 import BackgroundDecor from '../components/BackgroundDecor'
 import PageHero from '../components/PageHero'
 import ProjectCard from '../components/ProjectCard'
+import ProjectModal from '../components/ProjectModal'
 import SEO from '../components/SEO'
 import { seoMeta } from '../data/seo'
 import { useLanguage } from '../context/LanguageContext'
@@ -29,12 +30,21 @@ const categoryAccent: Record<string, string> = {
 
 export default function Proyectos() {
   const [activeFilter, setActiveFilter] = useState('all')
+  interface ProjectItem {
+    id: string
+    title: string
+    category: string
+    description: string
+    location: string
+    image: string
+  }
+  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null)
   const { language } = useLanguage()
   const t = getTranslation(language)
   const p = t.projectsPage
   const isEn = language === 'en'
 
-  const projectItems = t.projectsData.items
+  const projectItems = t.projectsData.items as unknown as ProjectItem[]
 
   const filters = [
     { key: 'all', label: p.filters.all },
@@ -132,10 +142,18 @@ export default function Proyectos() {
                   location={p.location}
                   image={p.image}
                   accentColor={categoryAccent[p.category] || '#C8A45D'}
+                  onClick={() => setSelectedProject(p)}
                 />
               </Reveal>
             ))}
           </div>
+
+          <ProjectModal
+            project={selectedProject}
+            accentColor={selectedProject ? categoryAccent[selectedProject.category] || '#C8A45D' : '#C8A45D'}
+            onClose={() => setSelectedProject(null)}
+            contactLabel={isEn ? 'Contact us' : 'Contactar'}
+          />
         </div>
       </section>
 
