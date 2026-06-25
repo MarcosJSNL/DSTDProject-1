@@ -14,7 +14,7 @@ export const projects: Project[] = [
     category: 'hormigones',
     description: 'Suministro y vaciado de concreto premezclado para edificio de 120 apartamentos.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1590644365607-1c5af84bf0fa?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1673978484091-6a743a9058cf?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: 'industrias',
     description: 'Entrega de blocks, cemento, varillas y vigas H para centro comercial.',
     location: 'Santiago, RD',
-    image: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '3',
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     category: 'agregados',
     description: 'Suministro de arena, grava y piedra para proyecto de infraestructura vial.',
     location: 'La Romana, RD',
-    image: 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1637076988526-f7a77037845c?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '5',
@@ -54,6 +54,6 @@ export const projects: Project[] = [
     category: 'general',
     description: 'Construcción de oficinas corporativas con materiales del grupo.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1497366811353-68774c9666cd?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?q=80&w=1920&auto=format&fit=crop',
   },
 ]
