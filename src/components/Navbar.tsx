@@ -83,7 +83,7 @@ export default function Navbar() {
         </div>
 
         {/* Center Links - Desktop */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8">
           {navLinks.map((link) => (
             <NavLink
               key={link.label}
@@ -97,7 +97,7 @@ export default function Navbar() {
         </div>
 
         {/* Right CTA + Language */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <button
             onClick={toggleLanguage}
             className={`px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wider border backdrop-blur-sm transition-all duration-300 ${langBtnClass}`}
@@ -114,7 +114,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile: Language + Hamburger */}
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <button
             onClick={toggleLanguage}
             className={`px-2.5 py-1 rounded-md text-xs font-semibold tracking-wider border backdrop-blur-sm transition-all duration-300 ${langBtnClass}`}
@@ -134,7 +134,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className={`lg:hidden mt-2 max-w-7xl mx-auto rounded-xl px-4 py-4 flex flex-col gap-3 ${overlay ? 'liquid-glass' : 'bg-ivory border border-navy/10'}`}>
+        <div className={`xl:hidden mt-2 max-w-7xl mx-auto rounded-xl px-4 py-4 flex flex-col gap-3 ${overlay ? 'liquid-glass' : 'bg-ivory border border-navy/10'}`}>
           {navLinks.map((link) => (
             <NavLink
               key={link.label}
