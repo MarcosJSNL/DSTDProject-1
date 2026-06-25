@@ -50,15 +50,6 @@ export default function Hero() {
           <div className="lg:grid lg:grid-cols-12 lg:items-end gap-6 xl:gap-12">
             {/* Left Column — main content */}
             <div className="lg:col-span-7">
-              <FadeIn delay={400} duration={900}>
-                <div className="liquid-glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#C8A45D]" />
-                  <span className="text-xs md:text-sm tracking-wide text-white/90">
-                    {t.hero.tag}
-                  </span>
-                </div>
-              </FadeIn>
-
               <AnimatedHeading
                 text={t.hero.title}
                 className="text-readable text-white text-[1.65rem] sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-5 leading-[1.1]"
