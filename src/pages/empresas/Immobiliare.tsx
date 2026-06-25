@@ -50,9 +50,9 @@ export default function Immobiliare() {
   }
 
   const properties = [
-    { name: isEn ? 'Investment lot' : 'Solar para inversión', type: isEn ? 'Land' : 'Terreno', location: 'Punta Cana, RD', priceLabel: isEn ? 'Inquire' : 'Consultar', img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop' },
-    { name: isEn ? 'Apartment in development' : 'Apartamento en desarrollo', type: isEn ? 'Residential' : 'Residencial', location: 'Santiago, RD', priceLabel: isEn ? 'From $120,000' : 'Desde $120,000', img: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop' },
-    { name: isEn ? 'Commercial property' : 'Propiedad comercial', type: isEn ? 'Commercial' : 'Comercial', location: 'La Vega, RD', priceLabel: isEn ? 'Inquire' : 'Consultar', img: heroImg },
+    { name: isEn ? 'Investment lots' : 'Solares para inversión', type: isEn ? 'Land' : 'Terreno', location: 'Punta Cana, RD', priceLabel: isEn ? 'Inquire' : 'Consultar', img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop' },
+    { name: isEn ? 'Apartments in development' : 'Apartamentos en desarrollo', type: isEn ? 'Residential' : 'Residencial', location: 'Santiago, RD', priceLabel: isEn ? 'From $120,000' : 'Desde $120,000', img: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop' },
+    { name: isEn ? 'Commercial properties' : 'Propiedades comerciales', type: isEn ? 'Commercial' : 'Comercial', location: 'La Vega, RD', priceLabel: isEn ? 'Inquire' : 'Consultar', img: heroImg },
   ]
 
   const testimonial = {
