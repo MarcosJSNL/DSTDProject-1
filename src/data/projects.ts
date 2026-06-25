@@ -14,7 +14,7 @@ export const projects: Project[] = [
     category: 'hormigones',
     description: 'Suministro y vaciado de concreto premezclado para edificio de 120 apartamentos.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1590644365607-1c5af84bf0fa?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: 'industrias',
     description: 'Entrega de blocks, cemento, varillas y vigas H para centro comercial.',
     location: 'Santiago, RD',
-    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '3',
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     category: 'immobiliare',
     description: 'Proyecto inmobiliario de 80 unidades con áreas verdes y amenidades.',
     location: 'Punta Cana, RD',
-    image: 'https://images.unsplash.com/photo-1613490497145-505f752d0454?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     category: 'agregados',
     description: 'Suministro de arena, grava y piedra para proyecto de infraestructura vial.',
     location: 'La Romana, RD',
-    image: 'https://images.unsplash.com/photo-1485627658391-1369d102183c?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '5',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     category: 'general',
     description: 'Colaboración estratégica entre divisiones para desarrollo de resort.',
     location: 'Bávaro, RD',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '6',
@@ -54,6 +54,6 @@ export const projects: Project[] = [
     category: 'general',
     description: 'Construcción de oficinas corporativas con materiales del grupo.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1497366811353-68774c9666cd?q=80&w=1920&auto=format&fit=crop',
   },
 ]
