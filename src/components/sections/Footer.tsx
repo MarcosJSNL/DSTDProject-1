@@ -32,14 +32,12 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-champagne" />
-              <div className="flex flex-col leading-none">
-                <span className="font-gothic text-2xl tracking-tight">DSTD</span>
-                <span className="text-[10px] uppercase tracking-widest text-white/60 mt-1">
-                  Enterprises
-                </span>
-              </div>
+              <span className="font-gothic text-2xl leading-none">DSTD</span>
+              <span className="text-sm font-medium uppercase tracking-widest text-white/60">
+                Enterprises
+              </span>
             </div>
             <p className="mt-5 max-w-xs text-sm text-white/60 leading-relaxed">
               {language === 'es'
