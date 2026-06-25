@@ -6,7 +6,7 @@ import { getTranslation } from '../i18n/translations'
 
 function makeLinkClass(overlay: boolean) {
   return function linkClass({ isActive }: { isActive: boolean }) {
-    const base = 'text-sm transition-colors duration-300'
+    const base = 'text-sm uppercase transition-colors duration-300'
     if (overlay) {
       return [
         base,
@@ -107,7 +107,7 @@ export default function Navbar() {
           </button>
           <Link
             to="/contacto"
-            className={`px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-300 ${overlay ? 'bg-white text-black hover:bg-[#C8A45D] hover:text-white' : 'bg-navy text-white hover:bg-[#C8A45D]'}`}
+            className={`px-6 py-2 rounded-lg text-sm font-medium uppercase transition-colors duration-300 ${overlay ? 'bg-white text-black hover:bg-[#C8A45D] hover:text-white' : 'bg-navy text-white hover:bg-[#C8A45D]'}`}
           >
             {t.nav.contactButton}
           </Link>
@@ -141,7 +141,7 @@ export default function Navbar() {
               to={link.to}
               className={({ isActive }) =>
                 [
-                  'text-sm transition-colors duration-300',
+                  'text-sm uppercase transition-colors duration-300',
                   isActive
                     ? 'text-[#C8A45D] font-medium'
                     : overlay ? 'text-white/90 hover:text-[#C8A45D]' : 'text-navy/90 hover:text-[#C8A45D]',
@@ -155,7 +155,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/contacto"
-            className={`px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-300 text-center mt-1 ${overlay ? 'bg-white text-black hover:bg-[#C8A45D] hover:text-white' : 'bg-navy text-white hover:bg-[#C8A45D]'}`}
+            className={`px-6 py-2 rounded-lg text-sm font-medium uppercase transition-colors duration-300 text-center mt-1 ${overlay ? 'bg-white text-black hover:bg-[#C8A45D] hover:text-white' : 'bg-navy text-white hover:bg-[#C8A45D]'}`}
             onClick={() => setMobileOpen(false)}
           >
             {t.nav.contactButton}
