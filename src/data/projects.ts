@@ -50,10 +50,10 @@ export const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'Infraestructura corporativa DSTD',
+    title: 'Infraestructura corporativa',
     category: 'general',
     description: 'Construcción de oficinas corporativas con materiales del grupo.',
     location: 'Santo Domingo, RD',
-    image: 'https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop',
   },
 ]

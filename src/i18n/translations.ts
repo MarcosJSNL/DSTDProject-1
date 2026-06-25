@@ -115,7 +115,7 @@ export const translations = {
         { id: '3', title: 'Desarrollo residencial DSTD Immobiliare', category: 'immobiliare', description: 'Proyecto inmobiliario de 80 unidades con áreas verdes y amenidades.', location: 'Punta Cana, RD', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop' },
         { id: '4', title: 'Entrega de agregados para carretera', category: 'agregados', description: 'Suministro de arena, grava y piedra para proyecto de infraestructura vial.', location: 'La Romana, RD', image: 'https://images.unsplash.com/photo-1637076988526-f7a77037845c?q=80&w=1920&auto=format&fit=crop' },
         { id: '5', title: 'Alianza comercial para proyecto hotelero', category: 'general', description: 'Colaboración estratégica entre divisiones para desarrollo de resort.', location: 'Bávaro, RD', image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop' },
-        { id: '6', title: 'Infraestructura corporativa DSTD', category: 'general', description: 'Construcción de oficinas corporativas con materiales del grupo.', location: 'Santo Domingo, RD', image: 'https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?q=80&w=1920&auto=format&fit=crop' },
+        { id: '6', title: 'Infraestructura corporativa', category: 'general', description: 'Construcción de oficinas corporativas con materiales del grupo.', location: 'Santo Domingo, RD', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop' },
       ],
     },
     careers: {
@@ -453,7 +453,7 @@ export const translations = {
         { id: '3', title: 'DSTD Immobiliare residential development', category: 'immobiliare', description: 'Real estate project of 80 units with green areas and amenities.', location: 'Punta Cana, DR', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop' },
         { id: '4', title: 'Aggregate delivery for highway', category: 'agregados', description: 'Supply of sand, gravel and stone for road infrastructure project.', location: 'La Romana, DR', image: 'https://images.unsplash.com/photo-1637076988526-f7a77037845c?q=80&w=1920&auto=format&fit=crop' },
         { id: '5', title: 'Commercial alliance for hotel project', category: 'general', description: 'Strategic collaboration between divisions for resort development.', location: 'Bávaro, DR', image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop' },
-        { id: '6', title: 'DSTD corporate infrastructure', category: 'general', description: 'Construction of corporate offices with group materials.', location: 'Santo Domingo, DR', image: 'https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?q=80&w=1920&auto=format&fit=crop' },
+        { id: '6', title: 'Corporate infrastructure', category: 'general', description: 'Construction of corporate offices with group materials.', location: 'Santo Domingo, DR', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop' },
       ],
     },
     careers: {
