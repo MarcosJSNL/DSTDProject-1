@@ -30,7 +30,7 @@ export const projects: Project[] = [
     category: 'immobiliare',
     description: 'Proyecto inmobiliario de 80 unidades con áreas verdes y amenidades.',
     location: 'Punta Cana, RD',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '4',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     category: 'general',
     description: 'Colaboración estratégica entre divisiones para desarrollo de resort.',
     location: 'Bávaro, RD',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1920&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop',
   },
   {
     id: '6',
