@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, ArrowRight } from 'lucide-react'
+import { MapPin, Mail, ArrowRight, Globe, Headset } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
@@ -10,7 +10,7 @@ import WhatsAppButton from '../components/WhatsAppButton'
 import SEO from '../components/SEO'
 import { seoMeta } from '../data/seo'
 import { companies } from '../data/companies'
-import { whatsappMessages } from '../utils/whatsapp'
+import { whatsappMessages, getWhatsAppUrl } from '../utils/whatsapp'
 import { useLanguage } from '../context/LanguageContext'
 import { getTranslation } from '../i18n/translations'
 
@@ -72,8 +72,8 @@ export default function Contacto() {
                   </p>
                 </div>
 
-                <div className="space-y-5">
-                  <div className="flex items-start gap-4">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 rounded-2xl border border-navy/5 bg-ivory/60 p-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-champagne/10">
                       <MapPin size={20} className="text-champagne" strokeWidth={1.5} />
                     </div>
@@ -82,7 +82,10 @@ export default function Contacto() {
                       <div className="text-sm text-graphite/60">La Vega, República Dominicana</div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <a
+                    href="mailto:dstdenterprises@gmail.com"
+                    className="flex items-center gap-4 rounded-2xl border border-navy/5 bg-ivory/60 p-4 transition-colors duration-300 hover:border-champagne/40"
+                  >
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-champagne/10">
                       <Mail size={20} className="text-champagne" strokeWidth={1.5} />
                     </div>
@@ -90,29 +93,47 @@ export default function Contacto() {
                       <div className="font-medium text-navy">{c.email}</div>
                       <div className="text-sm text-graphite/60">dstdenterprises@gmail.com</div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-champagne/10">
-                      <Phone size={20} className="text-champagne" strokeWidth={1.5} />
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="font-medium text-navy">{isEn ? 'International (WhatsApp only)' : 'Internacionales (WhatsApp only)'}</div>
-                        <div className="mt-1 space-y-0.5 text-sm text-graphite/60">
-                          <div>+1 786 933 0018</div>
-                          <div>+1 786 933 0017</div>
+                  </a>
+
+                  {[
+                    {
+                      icon: Globe,
+                      title: isEn ? 'International' : 'Internacionales',
+                      numbers: ['+1 786 933 0018', '+1 786 933 0017'],
+                    },
+                    {
+                      icon: Headset,
+                      title: isEn ? 'National sales' : 'Nacionales para ventas',
+                      numbers: ['+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251'],
+                    },
+                  ].map((group) => (
+                    <div key={group.title} className="rounded-2xl border border-navy/5 bg-ivory/60 p-5">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-champagne/10">
+                          <group.icon size={18} className="text-champagne" strokeWidth={1.5} />
                         </div>
+                        <div className="font-medium text-navy">{group.title}</div>
+                        <span className="ml-auto inline-flex items-center gap-1.5 rounded-full bg-[#25D366]/10 px-2.5 py-1 text-[11px] font-semibold text-[#1DA851]">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#25D366]" />
+                          WhatsApp only
+                        </span>
                       </div>
-                      <div>
-                        <div className="font-medium text-navy">{isEn ? 'National sales (WhatsApp only)' : 'Nacionales para ventas (WhatsApp only)'}</div>
-                        <div className="mt-1 space-y-0.5 text-sm text-graphite/60">
-                          <div>+1 829 367 2491</div>
-                          <div>+1 809 666 6616</div>
-                          <div>+1 849 257 0251</div>
-                        </div>
+                      <div className="mt-3 grid gap-2 pl-12">
+                        {group.numbers.map((num) => (
+                          <a
+                            key={num}
+                            href={getWhatsAppUrl({ phone: num, message: whatsappMessages.general })}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group/num flex items-center gap-2 text-sm text-graphite/70 transition-colors duration-300 hover:text-[#1DA851]"
+                          >
+                            <span className="font-medium tracking-wide">{num}</span>
+                            <ArrowRight size={14} className="opacity-0 -translate-x-1 transition-all duration-300 group-hover/num:opacity-100 group-hover/num:translate-x-0" />
+                          </a>
+                        ))}
                       </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
 
                 <WhatsAppButton variant="inline" message={whatsappMessages.general} label={isEn ? 'Write us on WhatsApp' : 'Escríbenos por WhatsApp'} />

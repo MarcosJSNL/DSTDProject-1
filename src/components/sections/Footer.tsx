@@ -98,27 +98,43 @@ export default function Footer() {
                 <Mail size={16} className="text-champagne" strokeWidth={1.5} />
                 dstdenterprises@gmail.com
               </li>
-              <li className="flex items-start gap-3">
-                <Phone size={16} className="text-champagne mt-0.5 shrink-0" strokeWidth={1.5} />
-                <div className="space-y-3">
-                  <div>
-                    <div className="text-white/90">{language === 'es' ? 'Internacionales (WhatsApp only)' : 'International (WhatsApp only)'}</div>
-                    <div className="mt-0.5 space-y-0.5 text-white/60">
-                      <div>+1 786 933 0018</div>
-                      <div>+1 786 933 0017</div>
-                    </div>
+            </ul>
+            <div className="mt-5 space-y-4">
+              {[
+                {
+                  title: language === 'es' ? 'Internacionales' : 'International',
+                  numbers: ['+1 786 933 0018', '+1 786 933 0017'],
+                },
+                {
+                  title: language === 'es' ? 'Nacionales para ventas' : 'National sales',
+                  numbers: ['+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251'],
+                },
+              ].map((group) => (
+                <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div className="flex items-center gap-2">
+                    <Phone size={14} className="text-champagne shrink-0" strokeWidth={1.5} />
+                    <span className="text-xs font-medium text-white/90">{group.title}</span>
+                    <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-[#25D366]/15 px-2 py-0.5 text-[10px] font-semibold text-[#3ddc7f]">
+                      <span className="h-1 w-1 rounded-full bg-[#25D366]" />
+                      WhatsApp
+                    </span>
                   </div>
-                  <div>
-                    <div className="text-white/90">{language === 'es' ? 'Nacionales para ventas (WhatsApp only)' : 'National sales (WhatsApp only)'}</div>
-                    <div className="mt-0.5 space-y-0.5 text-white/60">
-                      <div>+1 829 367 2491</div>
-                      <div>+1 809 666 6616</div>
-                      <div>+1 849 257 0251</div>
-                    </div>
+                  <div className="mt-2 space-y-1 pl-6">
+                    {group.numbers.map((num) => (
+                      <a
+                        key={num}
+                        href={`https://wa.me/${num.replace(/\D/g, '')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-sm text-white/60 transition-colors duration-300 hover:text-champagne"
+                      >
+                        {num}
+                      </a>
+                    ))}
                   </div>
                 </div>
-              </li>
-            </ul>
+              ))}
+            </div>
           </div>
         </div>
 
