@@ -17,8 +17,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'OldLondon';
+  src: url('/fonts/OldLondon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-gothic {
-  font-family: 'UnifrakturMaguntia', 'Inter', sans-serif;
+  font-family: 'OldLondon', 'Inter', sans-serif;
 }
 
 /* Safe area bottom padding for fixed elements on mobile */
