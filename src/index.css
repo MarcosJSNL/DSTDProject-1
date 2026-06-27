@@ -29,6 +29,13 @@ body {
   font-family: 'OldLondon', 'Inter', sans-serif;
 }
 
+.font-gothic-red {
+  font-family: 'OldLondon', 'Inter', sans-serif;
+  color: #8B0000;
+  -webkit-text-stroke: 1.5px #000;
+  paint-order: stroke fill;
+}
+
 /* Safe area bottom padding for fixed elements on mobile */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .pb-safe {

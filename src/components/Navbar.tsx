@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#C8A45D]" />
-            <span className={`font-gothic text-2xl leading-none ${overlay ? 'text-white' : 'text-navy'}`}>
+            <span className="font-gothic-red text-2xl leading-none">
               DSTD
             </span>
             <span className={`text-sm font-medium uppercase tracking-widest ${overlay ? 'text-white/70' : 'text-navy/70'}`}>
