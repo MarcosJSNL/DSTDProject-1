@@ -57,6 +57,11 @@ export default function Hormigones() {
         <img src={heroImg} alt="DSTD Hormigones" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/30" />
         <div className="absolute inset-0" style={{ background: `linear-gradient(120deg, ${accent}26, transparent 55%)` }} />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <span className="font-gothic text-2xl md:text-3xl lg:text-4xl text-black/80 translate-x-[10%] translate-y-[35%] select-none" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}>
+            Hormigones
+          </span>
+        </div>
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 pb-16 sm:pb-20 md:pb-28 pt-28 sm:pt-40">
           <Reveal>
             <div className="inline-flex items-center gap-2 mb-5">
