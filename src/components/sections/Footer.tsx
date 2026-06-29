@@ -102,12 +102,12 @@ export default function Footer() {
             <div className="mt-5 space-y-4">
               {[
                 {
-                  title: language === 'es' ? 'Internacionales' : 'International',
+                  title: language === 'es' ? 'Internacional' : 'International',
                   numbers: ['+1 786 933 0017', '+1 786 933 0018'],
                 },
                 {
-                  title: language === 'es' ? 'Nacionales para ventas' : 'National sales',
-                  numbers: ['+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251', '+1 849 564 0017', '+1 849 564 0018'],
+                  title: language === 'es' ? 'Nacional' : 'National sales',
+                  numbers: ['+1 849 564 0017', '+1 849 564 0018', '+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251'],
                 },
               ].map((group) => (
                 <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
