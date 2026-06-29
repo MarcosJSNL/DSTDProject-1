@@ -25,7 +25,7 @@ export default function Agregados() {
     { name: isEn ? 'Gravel' : 'Gravilla', description: isEn ? 'Gravel of different sizes for bases, asphalt, concrete and filters.' : 'Grava de distintos tamaños para bases, asfaltos, concretos y filtros.', img: '/img/productos/piedra.webp', tall: false },
     { name: isEn ? 'Mixed aggregates' : 'Agregados mixtos', description: isEn ? 'Specific blends according to your project technical specifications.' : 'Mezclas específicas según las especificaciones técnicas de tu proyecto.', img: '/img/productos/agregados-mixtos.jpg', tall: false },
     { name: isEn ? 'Fill material' : 'Material para relleno', description: isEn ? 'Processed and classified material for fills, bases and backfill.' : 'Material procesado y clasificado para rellenos, bases y explanaciones.', img: '/img/productos/material-selecto.jpg', tall: true },
-    { name: isEn ? 'Work supply' : 'Suministro para obras', description: isEn ? 'Continuous supply for projects of any scale.' : 'Abastecimiento continuo para proyectos de cualquier escala.', img: '/img/productos/suministro-para-obras.jpg', tall: false },
+    { name: isEn ? 'Construction supply' : 'Suministro para obra de construcción', description: isEn ? 'Continuous supply for projects of any scale.' : 'Abastecimiento continuo para proyectos de cualquier escala.', img: '/img/productos/suministro-para-obras.jpg', tall: false },
   ]
 
   const uses = [
@@ -72,7 +72,7 @@ export default function Agregados() {
       <section className="relative z-20" style={{ backgroundColor: accent }}>
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 py-6 text-white/90">
-            {[isEn ? 'Sand' : 'Arena', isEn ? 'Gravel' : 'Gravilla', isEn ? 'Fill material' : 'Material para relleno', isEn ? 'Mixed aggregates' : 'Agregados mixtos', isEn ? 'Work supply' : 'Suministro para obras'].map((m) => (
+            {[isEn ? 'Sand' : 'Arena', isEn ? 'Gravel' : 'Gravilla', isEn ? 'Fill material' : 'Material para relleno', isEn ? 'Mixed aggregates' : 'Agregados mixtos', isEn ? 'Construction supply' : 'Suministro para obra de construcción'].map((m) => (
               <span key={m} className="text-sm md:text-base font-medium uppercase tracking-wider">{m}</span>
             ))}
           </div>
