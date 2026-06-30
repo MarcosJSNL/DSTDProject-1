@@ -21,7 +21,7 @@ export default function Industrias() {
 
   const catalog = [
     { name: 'Blocks', description: isEn ? 'High-strength concrete blocks in different sizes and finishes.' : 'Bloques de concreto de alta resistencia en distintas medidas y acabados.', img: '/img/productos/blocks.jpeg' },
-    { name: 'Cemento', description: isEn ? 'Quality guaranteed Portland cement for structures and finishes.' : 'Cemento Portland de calidad garantizada para estructuras y acabados.', img: '/img/productos/cemento.jpg' },
+    { name: 'Cemento', description: isEn ? 'Quality guaranteed Portland cement for structures and finishes.' : 'Cemento Portland de calidad garantizada para estructuras y acabados.', img: '/media/cemento card.jpeg' },
     { name: isEn ? 'Rebar' : 'Varillas', description: isEn ? 'Corrugated steel for structural reinforcement according to technical specifications.' : 'Acero corrugado para refuerzo estructural según especificaciones técnicas.', img: '/img/productos/varillas.jpg' },
     { name: isEn ? 'H Beams' : 'Vigas H', description: isEn ? 'Structural steel beams for roofs, floors and large spans.' : 'Vigas de acero estructural para techos, entrepisos y grandes luces.', img: '/img/productos/vigas-h.jpg' },
     { name: 'Aluzinc', description: isEn ? 'Corrosion-resistant aluzinc sheets for roofs and enclosures.' : 'Láminas de aluzinc resistentes a la corrosión para techos y cerramientos.', img: '/img/productos/aluzinc.jpg' },
