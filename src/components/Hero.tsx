@@ -60,13 +60,13 @@ export default function Hero() {
               />
 
               <FadeIn delay={800} duration={1000}>
-                <p className="text-readable text-base md:text-lg text-white/85 mb-7 max-w-xl leading-relaxed">
+                <p className="text-readable text-base md:text-lg text-white/85 mb-5 sm:mb-7 max-w-xl leading-relaxed">
                   <BrandText dstdClassName="font-gothic-red">{t.hero.subtitle}</BrandText>
                 </p>
               </FadeIn>
 
               <FadeIn delay={1200} duration={1000}>
-                <div className="flex flex-wrap gap-4 mb-9">
+                <div className="flex flex-wrap gap-3 sm:gap-4 mb-6 sm:mb-9">
                   <Link
                     to="/nosotros"
                     className="group inline-flex items-center gap-2 bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-[#C8A45D] hover:text-white transition-colors duration-300"
@@ -116,7 +116,7 @@ export default function Hero() {
                     {divisions.map((d) => (
                       <li
                         key={d.name}
-                        className="group flex items-center justify-between py-3"
+                        className="group flex items-center justify-between py-2.5 sm:py-3"
                       >
                         <Link
                           to={`/empresas/${d.slug}`}
@@ -125,7 +125,7 @@ export default function Hero() {
                           <div className="text-base md:text-lg font-medium text-white">
                             <BrandText dstdClassName="font-gothic-red">{d.name}</BrandText>
                           </div>
-                          <div className="text-xs text-white/60">{d.desc}</div>
+                          <div className="hidden sm:block text-xs text-white/60">{d.desc}</div>
                         </Link>
                         <ArrowRight
                           size={16}
