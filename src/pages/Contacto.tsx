@@ -26,7 +26,7 @@ export default function Contacto() {
       <PageHero
         eyebrow={c.pageTitle}
         title={c.pageSubtitle}
-        description={isEn ? 'Connect with DSTD Enterprises and learn how our divisions can add value to your next project.' : 'Conecta con DSTD Enterprises y conoce cómo nuestras divisiones pueden aportar valor a tu próximo proyecto.'}
+        description={<BrandText>{isEn ? 'Connect with DSTD Enterprises and learn how our divisions can add value to your next project.' : 'Conecta con DSTD Enterprises y conoce cómo nuestras divisiones pueden aportar valor a tu próximo proyecto.'}</BrandText>}
       />
 
       {/* Contact Grid */}
@@ -189,7 +189,7 @@ export default function Contacto() {
                 {t.careers.title}
               </h2>
               <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed">
-                {t.careers.description}
+                <BrandText>{t.careers.description}</BrandText>
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 {t.careers.areas.map((area) => (

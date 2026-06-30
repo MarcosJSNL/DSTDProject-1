@@ -2,6 +2,7 @@ import { Layers, Target, Boxes, Building2 } from 'lucide-react'
 import Reveal from '../Reveal'
 import SectionHeading from '../SectionHeading'
 import BackgroundDecor from '../BackgroundDecor'
+import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
@@ -23,7 +24,7 @@ export default function GroupSection() {
               eyebrow={g.eyebrow}
               tone="light"
               title={g.title}
-              description={g.description}
+              description={<BrandText>{g.description}</BrandText>}
             />
           </Reveal>
 

@@ -22,7 +22,7 @@ export default function Empresas() {
       <PageHero
         eyebrow={isEn ? 'Divisions' : 'Divisiones'}
         title={isEn ? 'Four divisions, one same quality standard.' : 'Cuatro divisiones, una misma exigencia de calidad.'}
-        description={t.companies.subtitle}
+        description={<BrandText>{t.companies.subtitle}</BrandText>}
       />
 
       {/* Companies Grid */}

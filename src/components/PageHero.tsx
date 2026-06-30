@@ -1,11 +1,12 @@
+import type { ReactNode } from 'react'
 import Reveal from './Reveal'
 import BackgroundDecor from './BackgroundDecor'
 
 interface PageHeroProps {
   eyebrow: string
   eyebrowAccent?: string
-  title: string
-  description?: string
+  title: ReactNode
+  description?: ReactNode
   bgImage?: string
   tone?: 'dark' | 'light'
 }

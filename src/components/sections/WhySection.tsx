@@ -2,6 +2,7 @@ import { Network, Layers3, BadgeCheck, ClipboardCheck, LineChart } from 'lucide-
 import Reveal from '../Reveal'
 import SectionHeading from '../SectionHeading'
 import BackgroundDecor from '../BackgroundDecor'
+import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
@@ -47,7 +48,7 @@ export default function WhySection() {
           <div className="lg:col-span-5">
             <Reveal>
               <SectionHeading
-                eyebrow={w.eyebrow}
+                eyebrow={<BrandText>{w.eyebrow}</BrandText>}
                 tone="light"
                 title={w.title}
                 description={w.subtitle}

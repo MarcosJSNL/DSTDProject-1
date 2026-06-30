@@ -1,4 +1,5 @@
 import LegalLayout from './LegalLayout'
+import BrandText from '../components/BrandText'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function PoliticaPrivacidad() {
@@ -42,7 +43,7 @@ export default function PoliticaPrivacidad() {
       {t.sections.map((s) => (
         <div key={s.title}>
           <h2 className="text-xl font-medium text-navy">{s.title}</h2>
-          <p>{s.text}</p>
+          <p><BrandText>{s.text}</BrandText></p>
           {s.list && (
             <ul className="list-disc pl-6 mt-2 space-y-1 text-graphite/70">
               {s.list.map((item) => (
@@ -50,7 +51,7 @@ export default function PoliticaPrivacidad() {
               ))}
             </ul>
           )}
-          {s.footer && <p className="mt-2">{s.footer}</p>}
+          {s.footer && <p className="mt-2"><BrandText>{s.footer}</BrandText></p>}
         </div>
       ))}
     </LegalLayout>

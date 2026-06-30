@@ -140,7 +140,7 @@ export default function Footer() {
 
         <div className="mt-14 border-t border-white/10 pt-7 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">
-            © {year} DSTD Enterprises. {t.footer.rights}
+            © {year} <BrandText>DSTD Enterprises</BrandText>. {t.footer.rights}
           </p>
           <div
             className="flex items-center gap-4 text-xs text-white/40 relative z-[100]"

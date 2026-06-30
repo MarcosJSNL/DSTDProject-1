@@ -23,7 +23,7 @@ export default function CompaniesSection() {
             eyebrow={t.companies.eyebrow}
             tone="light"
             title={isEn ? 'Four divisions, one same quality standard.' : 'Cuatro divisiones, una misma exigencia de calidad.'}
-            description={t.companies.subtitle}
+            description={<BrandText>{t.companies.subtitle}</BrandText>}
           />
         </Reveal>
 

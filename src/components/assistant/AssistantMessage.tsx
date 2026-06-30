@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { getWhatsAppUrl, defaultPhone } from '../../utils/whatsapp'
 import { ExternalLink } from 'lucide-react'
+import BrandText from '../BrandText'
 import type { ChatMessage } from '../../data/assistantKnowledge'
 
 interface Props {
@@ -21,7 +22,7 @@ export default function AssistantMessage({ message }: Props) {
               : 'bg-champagne text-navy-deep font-medium',
           ].join(' ')}
         >
-          {message.text}
+          <BrandText>{message.text}</BrandText>
         </div>
 
         {message.actions && message.actions.length > 0 && (
@@ -33,7 +34,7 @@ export default function AssistantMessage({ message }: Props) {
                   to={action.href}
                   className="inline-flex items-center gap-1.5 rounded-lg bg-navy-deep/5 border border-navy/8 px-3 py-1.5 text-xs font-medium text-navy transition-colors duration-200 hover:bg-navy-deep hover:text-white"
                 >
-                  {action.label}
+                  <BrandText>{action.label}</BrandText>
                   <ExternalLink size={12} />
                 </Link>
               ) : action.type === 'whatsapp' && action.message ? (
@@ -44,7 +45,7 @@ export default function AssistantMessage({ message }: Props) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 rounded-lg bg-[#25D366]/10 border border-[#25D366]/20 px-3 py-1.5 text-xs font-medium text-[#1a9c4c] transition-colors duration-200 hover:bg-[#25D366] hover:text-white"
                 >
-                  {action.label}
+                  <BrandText>{action.label}</BrandText>
                 </a>
               ) : null
             )}

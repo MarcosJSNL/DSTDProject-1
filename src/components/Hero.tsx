@@ -61,7 +61,7 @@ export default function Hero() {
 
               <FadeIn delay={800} duration={1000}>
                 <p className="text-readable text-base md:text-lg text-white/85 mb-7 max-w-xl leading-relaxed">
-                  {t.hero.subtitle}
+                  <BrandText>{t.hero.subtitle}</BrandText>
                 </p>
               </FadeIn>
 

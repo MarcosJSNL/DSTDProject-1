@@ -5,6 +5,7 @@ import BackgroundDecor from '../components/BackgroundDecor'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import { seoMeta } from '../data/seo'
+import BrandText from '../components/BrandText'
 import { useLanguage } from '../context/LanguageContext'
 import { getTranslation } from '../i18n/translations'
 
@@ -34,7 +35,7 @@ export default function Nosotros() {
       <PageHero
         eyebrow={a.eyebrow}
         title={a.title}
-        description={a.description}
+        description={<BrandText>{a.description}</BrandText>}
       />
 
       {/* Quiénes somos */}
@@ -47,7 +48,7 @@ export default function Nosotros() {
                 eyebrow={a.whoWeAre}
                 tone="light"
                 title={a.whoTitle}
-                description={a.whoDesc}
+                description={<BrandText>{a.whoDesc}</BrandText>}
               />
             </Reveal>
             <Reveal delay={150}>
