@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 interface BrandTextProps {
   children: string
   className?: string
+  dstdClassName?: string
 }
 
 /**
@@ -10,14 +11,14 @@ interface BrandTextProps {
  * (blackletter) brand font, keeping it inline and baseline-aligned
  * with the surrounding text.
  */
-export default function BrandText({ children, className }: BrandTextProps) {
+export default function BrandText({ children, className, dstdClassName }: BrandTextProps) {
   const parts = children.split(/(DSTD)/g)
 
   return (
     <span className={className}>
       {parts.map((part, i) =>
         part === 'DSTD' ? (
-          <span key={i} className="font-gothic">
+          <span key={i} className={dstdClassName ?? 'font-gothic'}>
             DSTD
           </span>
         ) : (

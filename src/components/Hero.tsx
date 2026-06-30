@@ -61,7 +61,7 @@ export default function Hero() {
 
               <FadeIn delay={800} duration={1000}>
                 <p className="text-readable text-base md:text-lg text-white/85 mb-7 max-w-xl leading-relaxed">
-                  <BrandText>{t.hero.subtitle}</BrandText>
+                  <BrandText dstdClassName="font-gothic-red">{t.hero.subtitle}</BrandText>
                 </p>
               </FadeIn>
 
@@ -123,7 +123,7 @@ export default function Hero() {
                           className="flex-1"
                         >
                           <div className="text-base md:text-lg font-medium text-white">
-                            <BrandText>{d.name}</BrandText>
+                            <BrandText dstdClassName="font-gothic-red">{d.name}</BrandText>
                           </div>
                           <div className="text-xs text-white/60">{d.desc}</div>
                         </Link>
