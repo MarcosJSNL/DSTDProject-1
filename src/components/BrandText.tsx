@@ -17,7 +17,7 @@ export default function BrandText({ children, className }: BrandTextProps) {
     <span className={className}>
       {parts.map((part, i) =>
         part === 'DSTD' ? (
-          <span key={i} className="font-gothic-red">
+          <span key={i} className="font-gothic">
             DSTD
           </span>
         ) : (

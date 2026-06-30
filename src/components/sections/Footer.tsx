@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-champagne" />
-              <span className="font-gothic-red text-3xl leading-none">DSTD</span>
+              <span className="font-gothic text-3xl leading-none">DSTD</span>
               <span className="text-sm font-medium uppercase tracking-widest text-white/60">
                 Enterprises
               </span>
