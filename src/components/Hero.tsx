@@ -87,7 +87,7 @@ export default function Hero() {
               </FadeIn>
 
               <FadeIn delay={1500} duration={1000}>
-                <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                <div className="hidden sm:flex flex-wrap items-center gap-x-8 gap-y-4">
                   {stats.map((s) => (
                     <div key={s.label} className="text-readable">
                       <div className="text-2xl md:text-3xl font-semibold text-white">
