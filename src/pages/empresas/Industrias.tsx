@@ -73,11 +73,11 @@ export default function Industrias() {
         {/* Product strip */}
         <div className="absolute inset-x-0 bottom-0 z-10 border-t border-white/10 bg-navy-deep/40 backdrop-blur-md">
           <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
-            <div className="flex flex-wrap items-center gap-x-6 py-5">
+            <div className="flex flex-nowrap items-center gap-x-2 sm:gap-x-6 py-3 sm:py-5 overflow-hidden">
               {['Blocks', 'Cemento', 'Varillas', 'Vigas H', 'Aluzinc', isEn ? 'Ready-mix' : 'Hormigones', isEn ? 'Fill material' : 'Material para relleno', isEn ? 'Industrial metals' : 'Metales industriales'].map((m, i) => (
-                <div key={m} className="flex items-center gap-6">
+                <div key={m} className="flex items-center gap-2 sm:gap-6">
                   {i > 0 && <span className="h-1 w-1 shrink-0 rounded-full bg-white/30" />}
-                  <span className="whitespace-nowrap text-sm font-medium uppercase tracking-wider text-white/85">{m}</span>
+                  <span className="whitespace-nowrap text-[11px] sm:text-sm font-medium uppercase tracking-wider text-white/85">{m}</span>
                 </div>
               ))}
             </div>
