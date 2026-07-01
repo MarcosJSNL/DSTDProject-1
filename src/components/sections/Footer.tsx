@@ -137,6 +137,27 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Emails */}
+            <h4 className="mt-8 text-xs uppercase tracking-[0.2em] text-white/40">
+              {language === 'es' ? 'Correos' : 'Emails'}
+            </h4>
+            <ul className="mt-5 space-y-3">
+              {socials.map((s) => {
+                const email = `dstd${s.label.toLowerCase()}@gmail.com`
+                return (
+                  <li key={email} className="flex items-center gap-3">
+                    <Mail size={16} className="text-champagne shrink-0" strokeWidth={1.5} />
+                    <a
+                      href={`mailto:${email}`}
+                      className="text-sm text-white/75 transition-colors duration-300 hover:text-champagne break-all"
+                    >
+                      {email}
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
 
           {/* Contact */}
