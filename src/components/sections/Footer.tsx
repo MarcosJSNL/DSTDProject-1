@@ -107,7 +107,7 @@ export default function Footer() {
                 },
                 {
                   title: language === 'es' ? 'Nacional' : 'National sales',
-                  numbers: ['+1 849 564 0017', '+1 849 564 0018', '+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251'],
+                  numbers: ['+1 809 858 8522', '+1 829 367 2491', '+1 809 666 6616', '+1 849 257 0251', '+1 849 564 0017', '+1 849 564 0018'],
                 },
               ].map((group) => (
                 <div key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
