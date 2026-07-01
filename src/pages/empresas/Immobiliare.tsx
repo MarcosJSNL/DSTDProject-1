@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, TrendingUp, KeyRound, Banknote, Building, Home, BedDouble, Bath, Maximize, Quote, ShieldCheck } from 'lucide-react'
+import { ArrowRight, MapPin, TrendingUp, KeyRound, Banknote, Building, Home, BedDouble, Bath, Maximize, Quote, ShieldCheck, Car } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Reveal from '../../components/Reveal'
 import BackgroundDecor from '../../components/BackgroundDecor'
@@ -45,6 +45,7 @@ export default function Immobiliare() {
       { icon: BedDouble, label: isEn ? '6 bedrooms' : '6 habitaciones' },
       { icon: Bath, label: isEn ? '6.5 bathrooms' : '6.5 baños' },
       { icon: Maximize, label: '379 m²' },
+      { icon: Car, label: isEn ? '4 parking spaces' : '4 parqueos' },
     ],
     img: '/media/imagen principal immobiliare.jpeg',
   }
@@ -153,7 +154,7 @@ export default function Immobiliare() {
                 </div>
                 <h3 className="mt-3 text-3xl md:text-4xl font-light text-navy leading-tight" style={{ letterSpacing: '-0.02em' }}><BrandText>{featured.name}</BrandText></h3>
                 <p className="mt-4 text-base text-graphite/65 leading-relaxed">{featured.description}</p>
-                <div className="mt-7 grid grid-cols-3 gap-3">
+                <div className="mt-7 grid grid-cols-4 gap-3">
                   {featured.specs.map((sp) => (
                     <div key={sp.label} className="rounded-2xl border border-navy/10 bg-white px-3 py-4 text-center">
                       <sp.icon size={20} className="mx-auto" style={{ color: accent }} strokeWidth={1.5} />
