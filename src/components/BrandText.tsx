@@ -13,12 +13,15 @@ interface BrandTextProps {
  */
 export default function BrandText({ children, className, dstdClassName }: BrandTextProps) {
   const parts = children.split(/(DSTD)/g)
+  const brandClass = dstdClassName ?? 'font-gothic'
+  const hasExplicitSize = /(^|\s)text-/.test(brandClass)
+  const dstdSpanClass = `${hasExplicitSize ? '' : 'text-[1.25em]'} ${brandClass}`.trim()
 
   return (
     <span className={className}>
       {parts.map((part, i) =>
         part === 'DSTD' ? (
-          <span key={i} className={dstdClassName ?? 'font-gothic'}>
+          <span key={i} className={dstdSpanClass}>
             DSTD
           </span>
         ) : (
