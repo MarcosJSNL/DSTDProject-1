@@ -66,7 +66,7 @@ export default function CompaniesSection() {
                     {c.short}
                   </span>
                   <h3 className="mt-2 text-2xl md:text-3xl font-medium text-white">
-                    <BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</BrandText>
+                    <BrandText dstdClassName="font-gothic-red">{((t.companies as unknown) as Record<string, { name: string }>)[c.id]?.name ?? c.name}</BrandText>
                   </h3>
                   <p className="mt-3 max-w-md text-sm md:text-base text-white/80 leading-relaxed">
                     {((t.companies as unknown) as Record<string, { description: string }>)[c.id]?.description ?? c.description}
