@@ -13,11 +13,11 @@ const companyLinks = [
 ]
 
 const socials = [
-  { label: 'Enterprises', instagram: 'https://www.instagram.com/dstdenterprises', facebook: 'https://www.facebook.com/share/18jqmPNQwK/' },
-  { label: 'Hormigones', instagram: 'https://www.instagram.com/dstdhormigones', facebook: 'https://www.facebook.com/share/1BHDiUrS6R/' },
-  { label: 'Industrias', instagram: 'https://www.instagram.com/dstdindustrias', facebook: 'https://www.facebook.com/share/1cAiK3Uz8E/' },
-  { label: 'Immobiliare', instagram: 'https://www.instagram.com/dstdimmobiliare', facebook: 'https://www.facebook.com/share/17jYTgkND3/' },
-  { label: 'Agregados', instagram: 'https://www.instagram.com/dstdagregados', facebook: 'https://www.facebook.com/share/1Fxk63NvQi/' },
+  { label: 'Enterprises', instagram: 'https://www.instagram.com/dstdenterprises', facebook: 'https://www.facebook.com/share/17jYTgkND3/' },
+  { label: 'Hormigones', instagram: 'https://www.instagram.com/dstdhormigones', facebook: 'https://www.facebook.com/share/18jqmPNQwK/' },
+  { label: 'Industrias', instagram: 'https://www.instagram.com/dstdindustrias', facebook: 'https://www.facebook.com/share/1Fxk63NvQi/' },
+  { label: 'Immobiliare', instagram: 'https://www.instagram.com/dstdimmobiliare', facebook: 'https://www.facebook.com/share/1BHDiUrS6R/' },
+  { label: 'Agregados', instagram: 'https://www.instagram.com/dstdagregados', facebook: 'https://www.facebook.com/share/1cAiK3Uz8E/' },
 ]
 
 export default function Footer() {
