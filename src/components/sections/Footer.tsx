@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Mail, Phone, Instagram } from 'lucide-react'
+import { MapPin, Mail, Phone, Instagram, Facebook } from 'lucide-react'
 import BackgroundDecor from '../BackgroundDecor'
 import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
@@ -12,12 +12,12 @@ const companyLinks = [
   { key: 'agregados', to: '/empresas/agregados' },
 ]
 
-const socialLinks = [
-  { label: 'Enterprises', handle: '@dstdenterprises', url: 'https://www.instagram.com/dstdenterprises' },
-  { label: 'Immobiliare', handle: '@dstdimmobiliare', url: 'https://www.instagram.com/dstdimmobiliare' },
-  { label: 'Agregados', handle: '@dstdagregados', url: 'https://www.instagram.com/dstdagregados' },
-  { label: 'Hormigones', handle: '@dstdhormigones', url: 'https://www.instagram.com/dstdhormigones' },
-  { label: 'Industrias', handle: '@dstdindustrias', url: 'https://www.instagram.com/dstdindustrias' },
+const socials = [
+  { label: 'Enterprises', instagram: 'https://www.instagram.com/dstdenterprises', facebook: 'https://www.facebook.com/share/18jqmPNQwK/' },
+  { label: 'Hormigones', instagram: 'https://www.instagram.com/dstdhormigones', facebook: 'https://www.facebook.com/share/1BHDiUrS6R/' },
+  { label: 'Industrias', instagram: 'https://www.instagram.com/dstdindustrias', facebook: 'https://www.facebook.com/share/1cAiK3Uz8E/' },
+  { label: 'Immobiliare', instagram: 'https://www.instagram.com/dstdimmobiliare', facebook: 'https://www.facebook.com/share/17jYTgkND3/' },
+  { label: 'Agregados', instagram: 'https://www.instagram.com/dstdagregados', facebook: 'https://www.facebook.com/share/1Fxk63NvQi/' },
 ]
 
 export default function Footer() {
@@ -54,26 +54,49 @@ export default function Footer() {
             </p>
 
             {/* Social media */}
-            <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
-              <div className="flex items-center gap-2">
-                <Instagram size={16} className="text-champagne shrink-0" strokeWidth={1.5} />
-                <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">
-                  {language === 'es' ? 'Síguenos' : 'Follow us'}
-                </span>
+            <div className="mt-6 space-y-4">
+              {/* Instagram */}
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="flex items-center gap-2">
+                  <Instagram size={16} className="text-champagne shrink-0" strokeWidth={1.5} />
+                  <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">Instagram</span>
+                </div>
+                <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {socials.map((s) => (
+                    <a
+                      key={s.instagram}
+                      href={s.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/75 transition-colors duration-300 hover:border-champagne/40 hover:text-champagne"
+                    >
+                      <Instagram size={14} strokeWidth={1.5} className="shrink-0" />
+                      <span>{s.label}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {socialLinks.map((s) => (
-                  <a
-                    key={s.url}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/75 transition-colors duration-300 hover:border-champagne/40 hover:text-champagne"
-                  >
-                    <Instagram size={13} strokeWidth={1.5} className="shrink-0" />
-                    <span>{s.label}</span>
-                  </a>
-                ))}
+
+              {/* Facebook */}
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="flex items-center gap-2">
+                  <Facebook size={16} className="text-champagne shrink-0" strokeWidth={1.5} />
+                  <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">Facebook</span>
+                </div>
+                <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {socials.map((s) => (
+                    <a
+                      key={s.facebook}
+                      href={s.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/75 transition-colors duration-300 hover:border-champagne/40 hover:text-champagne"
+                    >
+                      <Facebook size={14} strokeWidth={1.5} className="shrink-0" />
+                      <span>{s.label}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
