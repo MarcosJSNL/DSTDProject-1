@@ -25,7 +25,7 @@ export default function Agregados() {
     { name: isEn ? 'Gravel' : 'Gravilla', description: isEn ? 'Gravel of different sizes for bases, asphalt, concrete and filters.' : 'Grava de distintos tamaños para bases, asfaltos, concretos y filtros.', img: '/img/productos/piedra.webp', tall: false },
     { name: isEn ? 'Mixed aggregates' : 'Agregados mixtos', description: isEn ? 'Specific blends according to your project technical specifications.' : 'Mezclas específicas según las especificaciones técnicas de tu proyecto.', img: '/img/productos/agregados-mixtos.jpg', tall: false },
     { name: isEn ? 'Fill material' : 'Material para relleno', description: isEn ? 'Processed and classified material for fills, bases and backfill.' : 'Material procesado y clasificado para rellenos, bases y explanaciones.', img: '/img/productos/material-selecto.jpg', tall: true },
-    { name: isEn ? 'Construction supply' : 'Suministro para obra de construcción', description: isEn ? 'Continuous supply for projects of any scale.' : 'Abastecimiento continuo para proyectos de cualquier escala.', img: '/img/productos/suministro-para-obras.jpg', tall: false },
+    { name: isEn ? 'Construction supply' : 'Suministro para obra de construcción', description: isEn ? 'Continuous supply for projects of any scale.' : 'Abastecimiento continuo para proyectos de cualquier escala.', img: '/media/agregados hero .jpeg', tall: false },
   ]
 
   const uses = [
