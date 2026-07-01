@@ -40,11 +40,11 @@ export default function Immobiliare() {
     name: isEn ? 'DSTD residential project' : 'Proyecto residencial DSTD',
     location: 'Santo Domingo, RD',
     description: isEn ? 'Modern apartment complex with premium amenities, green areas and contemporary design in one of the highest appreciation areas in the country.' : 'Complejo de apartamentos modernos con amenidades premium, áreas verdes y diseño contemporáneo en una de las zonas de mayor plusvalía del país.',
-    priceLabel: isEn ? 'From $150,000' : 'Desde $150,000',
+    priceLabel: isEn ? 'From $399,999' : 'Desde $399,999',
     specs: [
-      { icon: BedDouble, label: isEn ? '3 bedrooms' : '3 habitaciones' },
-      { icon: Bath, label: isEn ? '2 bathrooms' : '2 baños' },
-      { icon: Maximize, label: '120 m²' },
+      { icon: BedDouble, label: isEn ? '6 bedrooms' : '6 habitaciones' },
+      { icon: Bath, label: isEn ? '6.5 bathrooms' : '6 baños y medio' },
+      { icon: Maximize, label: '379 m²' },
     ],
     img: '/media/imagen principal immobiliare.jpeg',
   }
