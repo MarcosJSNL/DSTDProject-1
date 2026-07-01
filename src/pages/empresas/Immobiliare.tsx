@@ -158,7 +158,7 @@ export default function Immobiliare() {
                   {featured.specs.map((sp) => (
                     <div key={sp.label} className="rounded-2xl border border-navy/10 bg-white px-3 py-4 text-center">
                       <sp.icon size={20} className="mx-auto" style={{ color: accent }} strokeWidth={1.5} />
-                      <div className="mt-2 text-xs font-medium text-navy leading-tight">{sp.label}</div>
+                      <div className="mt-2 text-[11px] sm:text-xs font-medium text-navy leading-tight">{sp.label}</div>
                     </div>
                   ))}
                 </div>
