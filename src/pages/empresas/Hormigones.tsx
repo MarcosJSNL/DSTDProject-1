@@ -11,7 +11,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import { getTranslation } from '../../i18n/translations'
 
 const accent = '#E8772E'
-const heroImg = '/media/hero hor.jpeg'
+const heroImg = '/media/h hero.jpeg'
 
 export default function Hormigones() {
   const { language } = useLanguage()
