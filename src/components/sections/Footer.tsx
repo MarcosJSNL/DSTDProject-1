@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Mail, Phone } from 'lucide-react'
+import { MapPin, Mail, Phone, Instagram } from 'lucide-react'
 import BackgroundDecor from '../BackgroundDecor'
 import BrandText from '../BrandText'
 import { useLanguage } from '../../context/LanguageContext'
@@ -10,6 +10,14 @@ const companyLinks = [
   { key: 'industrias', to: '/empresas/industrias' },
   { key: 'immobiliare', to: '/empresas/immobiliare' },
   { key: 'agregados', to: '/empresas/agregados' },
+]
+
+const socialLinks = [
+  { label: 'Enterprises', handle: '@dstdenterprises', url: 'https://www.instagram.com/dstdenterprises' },
+  { label: 'Immobiliare', handle: '@dstdimmobiliare', url: 'https://www.instagram.com/dstdimmobiliare' },
+  { label: 'Agregados', handle: '@dstdagregados', url: 'https://www.instagram.com/dstdagregados' },
+  { label: 'Hormigones', handle: '@dstdhormigones', url: 'https://www.instagram.com/dstdhormigones' },
+  { label: 'Industrias', handle: '@dstdindustrias', url: 'https://www.instagram.com/dstdindustrias' },
 ]
 
 export default function Footer() {
@@ -44,6 +52,30 @@ export default function Footer() {
                 ? 'Grupo empresarial enfocado en construcción, industria, bienes raíces y agregados, con visión de desarrollo y crecimiento.'
                 : 'Business group focused on construction, industry, real estate and aggregates, with a vision for development and growth.'}
             </p>
+
+            {/* Social media */}
+            <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="flex items-center gap-2">
+                <Instagram size={16} className="text-champagne shrink-0" strokeWidth={1.5} />
+                <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">
+                  {language === 'es' ? 'Síguenos' : 'Follow us'}
+                </span>
+              </div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {socialLinks.map((s) => (
+                  <a
+                    key={s.url}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/75 transition-colors duration-300 hover:border-champagne/40 hover:text-champagne"
+                  >
+                    <Instagram size={13} strokeWidth={1.5} className="shrink-0" />
+                    <span>{s.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Links */}
