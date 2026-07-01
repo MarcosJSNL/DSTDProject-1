@@ -15,7 +15,7 @@ export default function BrandText({ children, className, dstdClassName }: BrandT
   const parts = children.split(/(DSTD)/g)
   const brandClass = dstdClassName ?? 'font-gothic'
   const hasExplicitSize = /(^|\s)text-/.test(brandClass)
-  const dstdSpanClass = `${hasExplicitSize ? '' : 'text-[1.25em]'} ${brandClass}`.trim()
+  const dstdSpanClass = `${hasExplicitSize ? '' : 'text-[1.5em]'} ${brandClass}`.trim()
 
   return (
     <span className={className}>
