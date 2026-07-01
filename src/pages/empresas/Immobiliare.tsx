@@ -43,7 +43,7 @@ export default function Immobiliare() {
     priceLabel: isEn ? 'From $399,999' : 'Desde $399,999',
     specs: [
       { icon: BedDouble, label: isEn ? '6 bedrooms' : '6 habitaciones' },
-      { icon: Bath, label: isEn ? '6.5 bathrooms' : '6 baños y medio' },
+      { icon: Bath, label: isEn ? '6.5 bathrooms' : '6.5 baños' },
       { icon: Maximize, label: '379 m²' },
     ],
     img: '/media/imagen principal immobiliare.jpeg',
