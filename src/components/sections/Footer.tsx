@@ -77,7 +77,7 @@ export default function Footer() {
                     to={c.to}
                     className="text-sm text-white/75 transition-colors duration-300 hover:text-champagne"
                   >
-                    <BrandText>{((t.companies as unknown) as Record<string, { name: string }>)[c.key]?.name ?? c.key}</BrandText>
+                    <BrandText dstdClassName="font-gothic-red">{((t.companies as unknown) as Record<string, { name: string }>)[c.key]?.name ?? c.key}</BrandText>
                   </Link>
                 </li>
               ))}
