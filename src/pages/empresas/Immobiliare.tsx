@@ -154,7 +154,7 @@ export default function Immobiliare() {
                 </div>
                 <h3 className="mt-3 text-3xl md:text-4xl font-light text-navy leading-tight" style={{ letterSpacing: '-0.02em' }}><BrandText>{featured.name}</BrandText></h3>
                 <p className="mt-4 text-base text-graphite/65 leading-relaxed">{featured.description}</p>
-                <div className="mt-7 grid grid-cols-4 gap-2">
+                <div className="mt-7 grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {featured.specs.map((sp) => (
                     <div key={sp.label} className="rounded-2xl border border-navy/10 bg-white px-2 py-4 text-center">
                       <sp.icon size={20} className="mx-auto" style={{ color: accent }} strokeWidth={1.5} />
