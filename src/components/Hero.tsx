@@ -122,8 +122,8 @@ export default function Hero() {
                           to={`/empresas/${d.slug}`}
                           className="flex-1"
                         >
-                          <div className="text-base md:text-lg font-medium text-white">
-                            <BrandText dstdClassName="font-gothic-red">{d.name}</BrandText>
+                          <div className="text-base md:text-lg font-medium text-white uppercase">
+                            <BrandText dstdClassName="font-gothic-red text-2xl md:text-3xl">{d.name}</BrandText>
                           </div>
                           <div className="hidden sm:block text-xs text-white/60">{d.desc}</div>
                         </Link>
